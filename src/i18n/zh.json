@@ -15,22 +15,43 @@
       "forFamilies": "家庭专区",
       "forEducators": "教育工作者专区",
       "forCenters": "托儿中心专区",
+      "about": "关于我们",
       "signIn": "登录",
       "signUp": "注册",
       "dashboard": "管理面板",
       "profile": "个人资料",
+      "myEnquiries": "我的咨询",
       "settings": "设置",
       "signOut": "退出登录",
       "admin": "管理后台",
-      "postJob": "发布职位"
+      "postJob": "发布职位",
+      "menu": "菜单"
     },
     "footer": {
       "about": "关于小桥",
       "aboutText": "小桥致力于为华人家庭与重视双语文化教育的托儿中心和教育工作者搭建沟通的桥梁。",
+      "tagline": "连接双语家庭与优质托儿服务",
       "quickLinks": "快捷链接",
       "forFamilies": "家庭专区",
       "forEducators": "教育工作者专区",
       "forCenters": "托儿中心专区",
+      "families": {
+        "heading": "家庭专区",
+        "search": "查找托儿中心",
+        "ccsGuide": "CCS补贴指南",
+        "about": "关于我们"
+      },
+      "centers": {
+        "heading": "托儿中心专区",
+        "listCenter": "入驻平台",
+        "pricing": "价格方案",
+        "login": "中心登录"
+      },
+      "educators": {
+        "heading": "教育工作者专区",
+        "findJobs": "查找工作",
+        "signup": "注册意向"
+      },
       "legal": "法律信息",
       "privacyPolicy": "隐私政策",
       "termsOfService": "服务条款",
@@ -341,7 +362,11 @@
       "termsAgreement": "注册即表示您同意我们的{termsLink}和{privacyLink}。",
       "termsLink": "服务条款",
       "privacyLink": "隐私政策",
-      "success": "账户创建成功！请查看邮箱完成验证。"
+      "success": "账户创建成功！请查看邮箱完成验证。",
+      "guestNote": "您也可以在不创建账户的情况下向托儿中心发送咨询。",
+      "back": "返回",
+      "familyDesc": "跟踪您的咨询并在中心回复时收到通知",
+      "centerDesc": "展示您的中心并接收家庭咨询"
     },
     "signIn": {
       "title": "欢迎回来",
@@ -397,7 +422,17 @@
       "message": "我们已向 {email} 发送了验证链接。请查看收件箱（包括垃圾邮件文件夹）完成验证。",
       "resend": "重新发送验证邮件",
       "resendSuccess": "验证邮件已重新发送。",
-      "resendCooldown": "请等待{seconds}秒后再重新发送。"
+      "resendCooldown": "请等待{seconds}秒后再重新发送。",
+      "backToSignIn": "返回登录"
+    },
+    "validation": {
+      "emailRequired": "请输入电子邮箱",
+      "emailInvalid": "请输入有效的电子邮箱地址",
+      "passwordRequired": "请输入密码",
+      "passwordMin": "密码至少需要8个字符",
+      "passwordMismatch": "两次输入的密码不一致",
+      "newPasswordRequired": "请输入新密码",
+      "confirmPasswordRequired": "请确认您的密码"
     }
   },
   "familyProfile": {

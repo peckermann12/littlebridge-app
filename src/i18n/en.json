@@ -15,22 +15,43 @@
       "forFamilies": "For Families",
       "forEducators": "For Educators",
       "forCenters": "For Centers",
+      "about": "About",
       "signIn": "Sign In",
       "signUp": "Sign Up",
       "dashboard": "Dashboard",
       "profile": "Profile",
+      "myEnquiries": "My Enquiries",
       "settings": "Settings",
       "signOut": "Sign Out",
       "admin": "Admin",
-      "postJob": "Post a Job"
+      "postJob": "Post a Job",
+      "menu": "Menu"
     },
     "footer": {
       "about": "About LittleBridge",
       "aboutText": "LittleBridge connects Mandarin-speaking families with childcare centers and bilingual educators who truly value cultural and linguistic diversity.",
+      "tagline": "Connecting bilingual families with quality childcare",
       "quickLinks": "Quick Links",
       "forFamilies": "For Families",
       "forEducators": "For Educators",
       "forCenters": "For Centers",
+      "families": {
+        "heading": "For Families",
+        "search": "Find Centers",
+        "ccsGuide": "CCS Guide",
+        "about": "About Us"
+      },
+      "centers": {
+        "heading": "For Centers",
+        "listCenter": "List Your Center",
+        "pricing": "Pricing",
+        "login": "Center Login"
+      },
+      "educators": {
+        "heading": "For Educators",
+        "findJobs": "Find Jobs",
+        "signup": "Register Interest"
+      },
       "legal": "Legal",
       "privacyPolicy": "Privacy Policy",
       "termsOfService": "Terms of Service",
@@ -341,7 +362,11 @@
       "termsAgreement": "By signing up, you agree to our {termsLink} and {privacyLink}.",
       "termsLink": "Terms of Service",
       "privacyLink": "Privacy Policy",
-      "success": "Account created! Please check your email to verify."
+      "success": "Account created! Please check your email to verify.",
+      "guestNote": "You can also send enquiries to centers without creating an account.",
+      "back": "Back",
+      "familyDesc": "Track your enquiries and get notified when centers respond",
+      "centerDesc": "List your center and receive family enquiries"
     },
     "signIn": {
       "title": "Welcome Back",
@@ -397,7 +422,17 @@
       "message": "We've sent a verification link to {email}. Please check your inbox (and spam folder) to verify your account.",
       "resend": "Resend verification email",
       "resendSuccess": "Verification email resent.",
-      "resendCooldown": "Please wait {seconds} seconds before requesting another email."
+      "resendCooldown": "Please wait {seconds} seconds before requesting another email.",
+      "backToSignIn": "Back to sign in"
+    },
+    "validation": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "passwordRequired": "Password is required",
+      "passwordMin": "Password must be at least 8 characters",
+      "passwordMismatch": "Passwords do not match",
+      "newPasswordRequired": "New password is required",
+      "confirmPasswordRequired": "Please confirm your password"
     }
   },
   "familyProfile": {
