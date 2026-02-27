@@ -1,0 +1,1601 @@
+{
+  "common": {
+    "appName": "LittleBridge",
+    "tagline": "Connecting bilingual families, educators, and childcare centers",
+    "language": {
+      "en": "English",
+      "zh": "中文",
+      "toggle": "Switch language",
+      "current": "EN"
+    },
+    "nav": {
+      "home": "Home",
+      "findCenters": "Find Centers",
+      "findJobs": "Find Jobs",
+      "forFamilies": "For Families",
+      "forEducators": "For Educators",
+      "forCenters": "For Centers",
+      "signIn": "Sign In",
+      "signUp": "Sign Up",
+      "dashboard": "Dashboard",
+      "profile": "Profile",
+      "settings": "Settings",
+      "signOut": "Sign Out",
+      "admin": "Admin",
+      "postJob": "Post a Job"
+    },
+    "footer": {
+      "about": "About LittleBridge",
+      "aboutText": "LittleBridge connects Mandarin-speaking families with childcare centers and bilingual educators who truly value cultural and linguistic diversity.",
+      "quickLinks": "Quick Links",
+      "forFamilies": "For Families",
+      "forEducators": "For Educators",
+      "forCenters": "For Centers",
+      "legal": "Legal",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "contact": "Contact Us",
+      "email": "hello@littlebridge.com.au",
+      "copyright": "© {year} LittleBridge. All rights reserved.",
+      "builtWith": "Built with love in Sydney & Melbourne",
+      "followUs": "Follow Us",
+      "xiaohongshu": "Xiaohongshu",
+      "wechat": "WeChat"
+    },
+    "buttons": {
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "save": "Save",
+      "saveChanges": "Save Changes",
+      "delete": "Delete",
+      "edit": "Edit",
+      "back": "Back",
+      "next": "Next",
+      "previous": "Previous",
+      "close": "Close",
+      "confirm": "Confirm",
+      "continue": "Continue",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More",
+      "viewAll": "View All",
+      "viewDetails": "View Details",
+      "search": "Search",
+      "clear": "Clear",
+      "clearAll": "Clear All",
+      "apply": "Apply",
+      "reset": "Reset",
+      "upload": "Upload",
+      "download": "Download",
+      "share": "Share",
+      "copyLink": "Copy Link",
+      "linkCopied": "Link copied!",
+      "tryAgain": "Try Again",
+      "goBack": "Go Back",
+      "goHome": "Go Home",
+      "seeMore": "See More",
+      "seeLess": "See Less",
+      "showAll": "Show All",
+      "hideAll": "Hide All",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "errors": {
+      "generic": "Something went wrong. Please try again.",
+      "network": "Network error. Please check your connection and try again.",
+      "notFound": "Page not found",
+      "notFoundMessage": "The page you're looking for doesn't exist or has been moved.",
+      "unauthorized": "You need to sign in to access this page.",
+      "forbidden": "You don't have permission to access this page.",
+      "serverError": "Server error. Our team has been notified.",
+      "validationError": "Please check the form for errors.",
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address",
+      "invalidPhone": "Please enter a valid Australian phone number",
+      "invalidPostcode": "Please enter a valid Australian postcode",
+      "invalidABN": "Please enter a valid ABN (11 digits)",
+      "passwordTooShort": "Password must be at least 8 characters",
+      "passwordMismatch": "Passwords do not match",
+      "fileTooLarge": "File is too large. Maximum size is {maxSize}MB.",
+      "invalidFileType": "Invalid file type. Accepted formats: {formats}",
+      "rateLimited": "Too many requests. Please wait a moment and try again.",
+      "enquiryLimit": "You've reached the daily enquiry limit (5 per day). Please try again tomorrow.",
+      "jobPostLimit": "You've reached the maximum active job listings (5). Please close an existing listing before posting a new one.",
+      "sessionExpired": "Your session has expired. Please sign in again.",
+      "subscriptionRequired": "An active subscription is required for this feature."
+    },
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "submitting": "Submitting...",
+    "noResults": "No results found",
+    "noResultsMessage": "Try adjusting your search filters or broadening your search area.",
+    "bilingualVersion": "Bilingual version",
+    "originalMessage": "Original message",
+    "translatedMessage": "Translated message",
+    "translationPreview": "Preview your message in English before sending",
+    "optional": "Optional",
+    "required": "Required",
+    "characters": "{count} characters",
+    "itemsCount": "{count} {count, plural, one {item} other {items}}",
+    "perMonth": "/month",
+    "inclGST": "incl. GST",
+    "aud": "AUD",
+    "km": "km",
+    "mins": "mins",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    },
+    "childcareTerms": {
+      "ccs": "Child Care Subsidy (CCS)",
+      "nqs": "National Quality Standard (NQS)",
+      "wwcc": "Working With Children Check (WWCC)",
+      "acecqa": "ACECQA",
+      "ect": "Early Childhood Teacher (ECT)",
+      "longDayCare": "Long Day Care",
+      "familyDayCare": "Family Day Care",
+      "oshc": "Outside School Hours Care (OSHC)",
+      "diploma": "Diploma of Early Childhood Education",
+      "certificate": "Certificate III in Early Childhood Education",
+      "bachelor": "Bachelor of Early Childhood Education",
+      "firstAid": "First Aid & CPR"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "pending": "Pending",
+      "verified": "Verified",
+      "unverified": "Unverified",
+      "new": "New",
+      "contacted": "Contacted",
+      "enquiryReceived": "Enquiry Received",
+      "enrolled": "Enrolled",
+      "declined": "Declined",
+      "interviewing": "Interviewing",
+      "offered": "Offered",
+      "hired": "Hired",
+      "closed": "Closed",
+      "paused": "Paused",
+      "expired": "Expired"
+    },
+    "languages": {
+      "mandarin": "Mandarin",
+      "cantonese": "Cantonese",
+      "english": "English",
+      "other": "Other"
+    },
+    "proficiency": {
+      "native": "Native",
+      "fluent": "Fluent",
+      "conversational": "Conversational",
+      "basic": "Basic"
+    },
+    "ageGroups": {
+      "infant": "Infant (0-1)",
+      "toddler": "Toddler (1-2)",
+      "preschool": "Preschool (2-3)",
+      "kindergarten": "Kindergarten (3-5)",
+      "schoolAge": "School Age (5+)"
+    },
+    "vacancyStatus": {
+      "available": "Vacancies Available",
+      "limited": "Limited Places",
+      "waitlist": "Waitlist Only",
+      "full": "Full"
+    }
+  },
+  "landing": {
+    "hero": {
+      "titleLine1": "Give your child the gift of",
+      "titleLine2": "growing up bilingual",
+      "subtitle": "Find childcare centers with genuine Mandarin programs, bilingual staff, and cultural understanding — whether you want your child to maintain their mother tongue or learn a new language.",
+      "ctaFamily": "Find Centers Near You",
+      "ctaEducator": "Find Bilingual Jobs",
+      "ctaCenter": "List Your Center",
+      "trustedBy": "Trusted by families across Sydney & Melbourne"
+    },
+    "valueProp": {
+      "title": "Why LittleBridge?",
+      "subtitle": "We bridge the gap between bilingual families and quality childcare",
+      "card1": {
+        "title": "Find real bilingual programs",
+        "description": "Not just 'we have one Chinese staff member.' Find centers with structured Mandarin programs, bilingual curriculum, and staff who genuinely use both languages daily."
+      },
+      "card2": {
+        "title": "Cultural connection that matters",
+        "description": "From celebrating Chinese New Year to understanding dietary preferences, find centers where your family's culture is part of daily life — not just a poster on the wall."
+      },
+      "card3": {
+        "title": "Everyone can communicate",
+        "description": "Whether it's you, your parents, or your in-laws doing drop-off — everyone can talk to the staff. Send enquiries in Chinese or English, and the center gets both."
+      }
+    },
+    "forFamilies": {
+      "sectionTitle": "For Families",
+      "title": "Find care where your child feels at home",
+      "description": "Search by location, bilingual programs, and what matters to your family. See which centers have Mandarin-speaking staff, structured bilingual curriculum, and availability — all in Chinese and English.",
+      "benefit1": "Find centers with structured Mandarin programs",
+      "benefit2": "See which staff speak Mandarin, Cantonese, or both",
+      "benefit3": "Enquire in Chinese or English — centers get both",
+      "benefit4": "Perfect for grandparents who do pickup too",
+      "cta": "Start Searching"
+    },
+    "forEducators": {
+      "sectionTitle": "For Educators",
+      "title": "Find centers that truly value your bilingual skills",
+      "description": "Stop being the 'nice bonus' bilingual staff member. Find centres that program for bilingual education and pay a fair premium for your skills.",
+      "benefit1": "Jobs specifically seeking bilingual educators",
+      "benefit2": "Match scores based on your qualifications and preferences",
+      "benefit3": "Centers that actually value bilingual programming",
+      "benefit4": "Competitive pay reflecting your bilingual premium",
+      "cta": "Browse Jobs"
+    },
+    "forCenters": {
+      "sectionTitle": "For Childcare Centers",
+      "title": "Attract families who value what you offer",
+      "description": "Reach families actively seeking bilingual childcare — from Mandarin-speaking households to English-speaking parents who want immersion programs. Plus find qualified bilingual educators.",
+      "benefit1": "Reach families specifically seeking bilingual programs",
+      "benefit2": "Receive enquiries with bilingual messages",
+      "benefit3": "Find qualified bilingual educators without agency fees",
+      "benefit4": "ROI: Each enrolled family = $15-25K/year revenue",
+      "cta": "List Your Center",
+      "pricing": "From $99/month — 14-day free trial"
+    },
+    "socialProof": {
+      "title": "What Our Community Says",
+      "testimonial1": {
+        "quote": "My English is fine — that's not why I use LittleBridge. I use it because I want my daughter to grow up speaking Mandarin as naturally as I did. Finding a center with a real bilingual program was impossible before this.",
+        "author": "Wei",
+        "role": "Parent, Burwood"
+      },
+      "testimonial2": {
+        "quote": "Every center says they value diversity. I want to work at one that actually programs for it.",
+        "author": "Sophie",
+        "role": "Bilingual Educator, Melbourne"
+      },
+      "testimonial3": {
+        "quote": "My mother-in-law does pickup three days a week. She doesn't speak any English. Knowing there's staff she can talk to about how my son's day went — that's priceless.",
+        "author": "Michelle",
+        "role": "Parent, Epping"
+      },
+      "stats": {
+        "families": "{count}+ Families",
+        "educators": "{count}+ Educators",
+        "centers": "{count}+ Centers",
+        "suburbs": "Across {count} suburbs"
+      }
+    },
+    "cta": {
+      "title": "Ready to find the right fit?",
+      "subtitle": "Join LittleBridge and connect with bilingual childcare that understands your family.",
+      "familyButton": "I'm a Family",
+      "educatorButton": "I'm an Educator",
+      "centerButton": "I'm a Center Director"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "family": {
+        "step1": {
+          "title": "Create Your Profile",
+          "description": "Tell us about your family, your children's ages, and what matters most to you."
+        },
+        "step2": {
+          "title": "Search & Match",
+          "description": "Browse centers near you with match scores based on language, location, and values."
+        },
+        "step3": {
+          "title": "Enquire in Your Language",
+          "description": "Send enquiries in Chinese. Centers receive professional English translations."
+        },
+        "step4": {
+          "title": "Connect with Centers",
+          "description": "Hear back from centers and arrange a visit when you're ready."
+        }
+      },
+      "educator": {
+        "step1": {
+          "title": "Build Your Profile",
+          "description": "Showcase your bilingual skills, qualifications, and experience."
+        },
+        "step2": {
+          "title": "Browse Jobs",
+          "description": "Find positions that specifically value bilingual educators."
+        },
+        "step3": {
+          "title": "Express Interest",
+          "description": "Apply with a bilingual cover note. Centers see your match score."
+        },
+        "step4": {
+          "title": "Get Hired",
+          "description": "Connect with centers that invest in bilingual programming."
+        }
+      }
+    }
+  },
+  "auth": {
+    "signUp": {
+      "title": "Create Your Account",
+      "subtitle": "Join LittleBridge to connect with bilingual childcare",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "At least 8 characters",
+      "confirmPasswordLabel": "Confirm password",
+      "confirmPasswordPlaceholder": "Re-enter your password",
+      "submitButton": "Create Account",
+      "googleButton": "Sign up with Google",
+      "orDivider": "or",
+      "hasAccount": "Already have an account?",
+      "signInLink": "Sign in",
+      "termsAgreement": "By signing up, you agree to our {termsLink} and {privacyLink}.",
+      "termsLink": "Terms of Service",
+      "privacyLink": "Privacy Policy",
+      "success": "Account created! Please check your email to verify."
+    },
+    "signIn": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to your LittleBridge account",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "submitButton": "Sign In",
+      "googleButton": "Sign in with Google",
+      "orDivider": "or",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Sign up",
+      "error": "Invalid email or password. Please try again."
+    },
+    "forgotPassword": {
+      "title": "Reset Your Password",
+      "subtitle": "Enter your email and we'll send you a reset link.",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "submitButton": "Send Reset Link",
+      "backToSignIn": "Back to sign in",
+      "success": "Password reset link sent. Please check your email.",
+      "resetTitle": "Set New Password",
+      "resetSubtitle": "Enter your new password below.",
+      "newPasswordLabel": "New password",
+      "newPasswordPlaceholder": "At least 8 characters",
+      "confirmNewPasswordLabel": "Confirm new password",
+      "resetButton": "Reset Password",
+      "resetSuccess": "Password reset successfully. You can now sign in."
+    },
+    "roleSelection": {
+      "title": "How will you use LittleBridge?",
+      "subtitle": "Select your role to personalise your experience. You can always change this later.",
+      "family": {
+        "title": "I'm a Family",
+        "description": "Looking for childcare with bilingual staff and cultural understanding"
+      },
+      "educator": {
+        "title": "I'm an Educator",
+        "description": "Looking for childcare jobs that value bilingual skills"
+      },
+      "center": {
+        "title": "I'm a Center Director",
+        "description": "Looking to attract bilingual families and hire bilingual educators"
+      },
+      "continueButton": "Continue as {role}"
+    },
+    "verification": {
+      "title": "Verify Your Email",
+      "message": "We've sent a verification link to {email}. Please check your inbox (and spam folder) to verify your account.",
+      "resend": "Resend verification email",
+      "resendSuccess": "Verification email resent.",
+      "resendCooldown": "Please wait {seconds} seconds before requesting another email."
+    }
+  },
+  "familyProfile": {
+    "title": "Family Profile",
+    "subtitle": "Tell us about your family so we can find the best childcare match",
+    "completeness": "Profile {percent}% complete",
+    "completeProfileLater": "Complete your profile later",
+    "addPhotoPrompt": "Add your photo to get 3x more responses",
+    "addChildPrompt": "Add your child's details for better center matches",
+    "addSuburbPrompt": "Add your suburb to see centers near you",
+    "fields": {
+      "parentName": "Parent name",
+      "parentNamePlaceholder": "Your full name",
+      "chineseName": "Chinese name",
+      "chineseNamePlaceholder": "中文名字 (optional)",
+      "email": "Email",
+      "phone": "Phone number",
+      "phonePlaceholder": "04XX XXX XXX",
+      "wechatId": "WeChat ID",
+      "wechatIdPlaceholder": "Your WeChat ID (optional)",
+      "suburb": "Suburb",
+      "suburbPlaceholder": "Start typing your suburb...",
+      "postcode": "Postcode",
+      "communicationLanguage": "Preferred communication language",
+      "communicationLanguageHelp": "Centers will communicate with you in this language where possible",
+      "additionalNotes": "Additional notes",
+      "additionalNotesPlaceholder": "Anything else you'd like centers to know? (You can write in Chinese or English)",
+      "additionalNotesHelp": "Your message will be automatically translated for centers"
+    },
+    "children": {
+      "title": "Your Children",
+      "addChild": "Add a Child",
+      "removeChild": "Remove",
+      "childName": "Child's name",
+      "childNamePlaceholder": "First name",
+      "dateOfBirth": "Date of birth",
+      "daysPerWeek": "Days per week needed",
+      "daysHelp": "How many days of childcare per week?",
+      "ageDisplay": "{years}y {months}m old"
+    },
+    "priorities": {
+      "title": "Your Priorities",
+      "subtitle": "Select what matters most to your family (choose up to 5)",
+      "bilingualEducation": "Bilingual education",
+      "culturalUnderstanding": "Cultural understanding",
+      "proximity": "Close to home",
+      "cost": "Affordable fees",
+      "outdoorPlay": "Outdoor play & nature",
+      "academicReadiness": "School readiness",
+      "mealQuality": "Quality meals & nutrition",
+      "smallGroups": "Small group sizes",
+      "extendedHours": "Extended operating hours",
+      "inclusiveProgram": "Inclusive & diverse program"
+    },
+    "saveSuccess": "Family profile saved successfully!",
+    "completeProfilePrompt": "Complete your profile to see personalised match scores with centers."
+  },
+  "educatorProfile": {
+    "title": "Educator Profile",
+    "subtitle": "Showcase your bilingual skills and find centers that truly value them",
+    "completeness": "Profile {percent}% complete",
+    "completeProfileLater": "Complete your profile later",
+    "addPhotoPrompt": "Add your photo to get 3x more responses from centers",
+    "addResumePrompt": "Upload your resume to stand out to centers",
+    "fields": {
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Your full name",
+      "phone": "Phone number",
+      "phonePlaceholder": "04XX XXX XXX",
+      "suburb": "Suburb",
+      "suburbPlaceholder": "Start typing your suburb...",
+      "bio": "About you",
+      "bioPlaceholder": "Tell centers about your experience, bilingual skills, and teaching philosophy. You can write in Chinese or English — it will be translated automatically.",
+      "bioHelp": "Your bio will be shown in both languages to centers",
+      "profilePhoto": "Profile photo",
+      "profilePhotoHelp": "Upload a professional photo (JPG or PNG, max 5MB)",
+      "resume": "Resume / CV",
+      "resumeHelp": "Upload your resume (PDF, max 10MB)",
+      "visibility": "Profile visibility",
+      "visibilityOn": "Visible to centers",
+      "visibilityOff": "Hidden from search",
+      "visibilityHelp": "When visible, centers can find your profile and reach out to you"
+    },
+    "qualifications": {
+      "title": "Qualifications & Experience",
+      "highestQualification": "Highest qualification",
+      "qualificationOptions": {
+        "bachelor": "Bachelor of Early Childhood Education",
+        "diploma": "Diploma of Early Childhood Education & Care",
+        "certificateIII": "Certificate III in Early Childhood Education & Care",
+        "other": "Other relevant qualification",
+        "studying": "Currently studying"
+      },
+      "wwccNumber": "WWCC number",
+      "wwccNumberPlaceholder": "Enter your WWCC number",
+      "wwccState": "WWCC state",
+      "wwccExpiry": "WWCC expiry date",
+      "wwccDisclaimer": "WWCC details are self-reported. Centers may independently verify your status.",
+      "firstAidCurrent": "First Aid & CPR current?",
+      "firstAidExpiry": "First Aid expiry date",
+      "yearsExperience": "Years of experience in childcare",
+      "experienceOptions": {
+        "lessThan1": "Less than 1 year",
+        "oneToTwo": "1-2 years",
+        "threeToFive": "3-5 years",
+        "sixToTen": "6-10 years",
+        "moreThanTen": "10+ years"
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "subtitle": "Your bilingual skills are your biggest asset — tell centers exactly what you offer",
+      "addLanguage": "Add a language",
+      "removeLanguage": "Remove",
+      "language": "Language",
+      "proficiency": "Proficiency level",
+      "languageOptions": {
+        "mandarin": "Mandarin (普通话)",
+        "cantonese": "Cantonese (粤语)",
+        "english": "English",
+        "other": "Other"
+      },
+      "proficiencyOptions": {
+        "native": "Native / Mother tongue",
+        "fluent": "Fluent — professional proficiency",
+        "conversational": "Conversational — can communicate comfortably",
+        "basic": "Basic — simple phrases and greetings"
+      }
+    },
+    "preferences": {
+      "title": "Job Preferences",
+      "employmentType": "Employment preference",
+      "employmentOptions": {
+        "fullTime": "Full-time",
+        "partTime": "Part-time",
+        "casual": "Casual",
+        "contract": "Contract",
+        "any": "Open to any"
+      },
+      "payRange": "Expected pay range",
+      "payMin": "Minimum ($/hr)",
+      "payMax": "Maximum ($/hr)",
+      "maxCommute": "Maximum commute",
+      "commuteOptions": {
+        "5km": "5 km",
+        "10km": "10 km",
+        "15km": "15 km",
+        "20km": "20 km",
+        "30km": "30 km",
+        "any": "Any distance"
+      }
+    },
+    "saveSuccess": "Educator profile saved successfully!",
+    "completeProfilePrompt": "Complete your profile to appear in center searches and see job match scores."
+  },
+  "educators": {
+    "signup": {
+      "title": "Find centers that truly value your bilingual skills",
+      "subtitle": "Join LittleBridge to connect with childcare centers that are actively looking for Mandarin and Cantonese-speaking educators. No recruitment fees, ever.",
+      "benefit1": "Jobs at centers with real bilingual programs",
+      "benefit2": "No recruitment agency fees",
+      "benefit3": "We match you based on your languages, location, and preferences",
+      "trust": "Join {count}+ bilingual educators already registered",
+      "formTitle": "Register your interest",
+      "fields": {
+        "fullName": "Full name",
+        "fullNamePlaceholder": "Your full name",
+        "email": "Email",
+        "emailPlaceholder": "your@email.com",
+        "phone": "Phone (optional)",
+        "phonePlaceholder": "04XX XXX XXX",
+        "suburb": "Suburb",
+        "suburbPlaceholder": "e.g., Chatswood, 2067",
+        "languages": "Languages you speak",
+        "languagesMandarin": "Mandarin",
+        "languagesCantonese": "Cantonese",
+        "languagesEnglish": "English",
+        "languagesOther": "Other",
+        "qualification": "Highest qualification",
+        "qualificationOptions": {
+          "cert3": "Certificate III in Early Childhood",
+          "diploma": "Diploma of Early Childhood",
+          "bachelor": "Bachelor's degree",
+          "masters": "Master's degree or PhD",
+          "other": "Other"
+        },
+        "wwcc": "Do you have a current Working With Children Check?",
+        "wwccYes": "Yes",
+        "wwccNo": "No",
+        "wwccUnsure": "Not sure"
+      },
+      "submitButton": "Register My Interest",
+      "privacy": "We'll only contact you about relevant job opportunities. Your information is never shared without your permission.",
+      "success": {
+        "title": "You're on the list!",
+        "message": "We'll notify you when centers in {suburb} are looking for bilingual educators.",
+        "browseCenters": "Browse Centers",
+        "duplicate": "You're already registered! We'll be in touch soon."
+      }
+    }
+  },
+  "centerProfile": {
+    "title": "Center Profile",
+    "subtitle": "Set up your center profile to attract bilingual families and educators",
+    "completeness": "Profile {percent}% complete",
+    "publicProfile": "View Public Profile",
+    "completeProfileLater": "Complete your profile later",
+    "addPhotoPrompt": "Add photos of your center to attract more families",
+    "addDescriptionPrompt": "Add a description to help families understand what makes your center special",
+    "fields": {
+      "centerName": "Center name",
+      "centerNamePlaceholder": "e.g., Bright Horizons Early Learning",
+      "abn": "ABN",
+      "abnPlaceholder": "11-digit ABN",
+      "address": "Street address",
+      "addressPlaceholder": "Full street address",
+      "suburb": "Suburb",
+      "suburbPlaceholder": "Start typing your suburb...",
+      "state": "State",
+      "postcode": "Postcode",
+      "phone": "Phone number",
+      "phonePlaceholder": "(02) XXXX XXXX or 04XX XXX XXX",
+      "email": "Contact email",
+      "emailPlaceholder": "centre@email.com",
+      "website": "Website",
+      "websitePlaceholder": "https://www.yourcentre.com.au",
+      "descriptionEn": "Center description (English)",
+      "descriptionEnPlaceholder": "Describe your center, your philosophy, and what makes you unique. Focus on what bilingual families would want to know.",
+      "descriptionZh": "Center description (Chinese)",
+      "descriptionZhHelp": "This will be auto-generated from your English description. You can edit it afterwards.",
+      "autoTranslateButton": "Auto-translate to Chinese",
+      "translating": "Translating...",
+      "operatingHours": "Operating hours",
+      "openTime": "Opening time",
+      "closeTime": "Closing time",
+      "feeRange": "Fee range",
+      "feeFrom": "From ($/day)",
+      "feeTo": "To ($/day)",
+      "feeHelp": "Daily fee range before CCS"
+    },
+    "photos": {
+      "title": "Photos",
+      "subtitle": "Add up to 10 photos of your center (outdoor areas, classrooms, meals, activities)",
+      "upload": "Upload Photos",
+      "dragDrop": "Drag and drop photos here, or click to browse",
+      "maxPhotos": "Maximum 10 photos",
+      "photoCount": "{count} of 10 photos",
+      "remove": "Remove photo",
+      "reorder": "Drag to reorder"
+    },
+    "ageGroups": {
+      "title": "Age Groups & Vacancies",
+      "subtitle": "Select the age groups you cater for and current vacancy status",
+      "ageGroup": "Age group",
+      "capacity": "Places",
+      "vacancy": "Vacancy status"
+    },
+    "staffLanguages": {
+      "title": "Staff Languages",
+      "subtitle": "Tell families which languages your staff speak — this is your biggest differentiator",
+      "addLanguage": "Add a language",
+      "language": "Language",
+      "staffCount": "Number of staff",
+      "staffCountHelp": "How many staff members speak this language?"
+    },
+    "programs": {
+      "title": "Programs & Features",
+      "subtitle": "Select the programs and features your center offers",
+      "bilingualProgram": "Bilingual education program",
+      "bilingualProgramDetail": "Structured bilingual (Mandarin/English) programming",
+      "culturalProgram": "Cultural celebrations program",
+      "culturalProgramDetail": "Celebrates Chinese and multicultural festivals",
+      "stemProgram": "STEM / Science program",
+      "outdoorProgram": "Nature / Outdoor learning",
+      "musicProgram": "Music & movement",
+      "artProgram": "Art & creativity",
+      "cookingProgram": "Cooking program",
+      "excursions": "Regular excursions",
+      "mealsIncluded": "Meals included",
+      "asianMealOptions": "Asian meal options available",
+      "nappiesIncluded": "Nappies/sunscreen included",
+      "pickupService": "Pick-up/drop-off service"
+    },
+    "nqsRatings": {
+      "title": "NQS Rating",
+      "subtitle": "Your National Quality Standard rating",
+      "rating": "Current NQS rating",
+      "ratingOptions": {
+        "excellent": "Excellent",
+        "exceeding": "Exceeding NQS",
+        "meeting": "Meeting NQS",
+        "workingTowards": "Working Towards NQS",
+        "requiresImprovement": "Requires Significant Improvement",
+        "notYetAssessed": "Not Yet Assessed"
+      },
+      "nqsHelp": "Your NQS rating is publicly available on the ACECQA website"
+    },
+    "claim": {
+      "title": "Claim Your Center",
+      "subtitle": "Already listed? Claim your center profile to manage enquiries and attract bilingual families.",
+      "searchPlaceholder": "Search for your center name...",
+      "notFound": "Can't find your center? Create a new profile instead.",
+      "claimButton": "Claim This Center",
+      "createNew": "Create New Center Profile"
+    },
+    "saveSuccess": "Center profile saved successfully!",
+    "completeProfilePrompt": "Complete your profile to appear in family search results and receive enquiries."
+  },
+  "search": {
+    "title": "Find Childcare Centers",
+    "subtitle": "Search for centers with bilingual staff near you",
+    "searchPlaceholder": "Enter suburb or postcode",
+    "filters": {
+      "title": "Filters",
+      "location": "Location",
+      "distance": "Distance",
+      "distanceOptions": {
+        "5km": "Within 5 km",
+        "10km": "Within 10 km",
+        "15km": "Within 15 km",
+        "20km": "Within 20 km"
+      },
+      "languages": "Staff languages",
+      "ageGroup": "Age group",
+      "vacancyOnly": "With vacancies only",
+      "programs": "Programs",
+      "nqsRating": "NQS rating",
+      "applyFilters": "Apply Filters",
+      "clearFilters": "Clear All Filters",
+      "activeFilters": "{count} filters active"
+    },
+    "sort": {
+      "label": "Sort by",
+      "distance": "Distance",
+      "matchScore": "Match Score",
+      "newest": "Newest Listed"
+    },
+    "results": {
+      "showing": "Showing {count} centers",
+      "showingOf": "Showing {count} of {total} centers",
+      "nearLocation": "near {location}",
+      "noResults": "No centers found",
+      "noResultsMessage": "Try expanding your search area or adjusting your filters.",
+      "noResultsSuggestion": "Showing centers in a wider area:",
+      "loginForScores": "Sign in to see personalised match scores",
+      "completeProfileForScores": "Complete your profile to see match scores"
+    },
+    "centerCard": {
+      "languages": "Languages spoken",
+      "distance": "{distance} km away",
+      "vacancy": "Vacancies",
+      "ageGroups": "Age groups",
+      "feeRange": "${min}-${max}/day",
+      "feeBeforeCCS": "before CCS",
+      "nqsRating": "NQS: {rating}",
+      "viewProfile": "View Profile",
+      "sendEnquiry": "Send Enquiry",
+      "staffCount": "{count} {language}-speaking staff"
+    },
+    "factorBadges": {
+      "mandarinSpoken": "Mandarin spoken",
+      "cantoneseSpoken": "Cantonese spoken",
+      "distanceAway": "{distance} km away",
+      "vacanciesAvailable": "Vacancies available",
+      "bilingualProgram": "Bilingual program",
+      "ccsApproved": "CCS approved",
+      "sharedValues": "Shared values",
+      "rightAgeGroup": "Right age group",
+      "culturalProgram": "Cultural celebrations"
+    },
+    "map": {
+      "showMap": "Show Map",
+      "hideMap": "Hide Map",
+      "viewOnMap": "View on Map"
+    }
+  },
+  "centerPage": {
+    "aboutSection": "About",
+    "photosSection": "Photos",
+    "programsSection": "Programs & Features",
+    "languagesSection": "Languages Spoken",
+    "ageGroupsSection": "Age Groups & Vacancies",
+    "feesSection": "Fees",
+    "hoursSection": "Operating Hours",
+    "locationSection": "Location",
+    "nqsSection": "Quality Rating",
+    "sendEnquiryCta": "Send Enquiry",
+    "shareCenter": "Share This Center",
+    "directionsCta": "Get Directions",
+    "websiteLink": "Visit Website",
+    "phoneLink": "Call Center",
+    "matchScore": "Your Match",
+    "noMatchScore": "Sign in to see your match score",
+    "staffLanguages": "{count} staff speak {language}",
+    "ccsApproved": "CCS Approved Center",
+    "operatingHoursLabel": "{open} - {close}, Monday to Friday",
+    "feeDisplay": "${min} - ${max} per day (before CCS)",
+    "lastUpdated": "Profile last updated {date}"
+  },
+  "centerDetail": {
+    "acecqaLink": "View government quality report",
+    "acecqaHelp": "Independent quality assessment by the Australian Government",
+    "foundingPartner": "Founding Partner \u00b7 Personally Verified",
+    "foundingPartnerTooltip": "This center was personally visited and verified by our founder June.",
+    "reviews": {
+      "title": "What families say",
+      "empty": "Be the first family to share your experience with {centerName}",
+      "comingSoon": "Reviews coming soon",
+      "writeReview": "Write a Review"
+    }
+  },
+  "enquiry": {
+    "form": {
+      "title": "Send Enquiry",
+      "subtitle": "Enquire about {centerName}",
+      "subtitleHelp": "You can write your message in Chinese — the center will receive a professional English translation.",
+      "preferredDateTime": "When would you like to visit? (optional)",
+      "preferredDateTimePlaceholder": "e.g., Next Tuesday morning, or any weekday afternoon",
+      "message": "Your message",
+      "messagePlaceholder": "Tell the center about your family and what you're looking for. Feel free to write in Chinese!\n\ne.g., We have a 2.5 year old daughter and we're looking for a center with Mandarin-speaking staff...",
+      "messageHelp": "Your message will be translated for the center. Both the original and translation will be sent.",
+      "contactPreference": "How should the center contact you?",
+      "contactOptions": {
+        "email": "Email",
+        "phone": "Phone",
+        "wechat": "WeChat"
+      },
+      "prefilledFrom": "Pre-filled from your profile",
+      "editProfile": "Edit profile",
+      "submitButton": "Send Enquiry",
+      "submitting": "Sending your enquiry...",
+      "translationPreviewTitle": "Here's how your message will appear in English",
+      "translationPreviewEdit": "Edit or confirm:",
+      "translationPreviewConfirm": "Looks good, send it",
+      "translationPreviewRetranslate": "Retranslate",
+      "privacyNote": "Your information is shared only with this center. We never share your details with anyone else."
+    },
+    "confirmation": {
+      "title": "Enquiry Sent!",
+      "message": "Your enquiry has been sent to {centerName}. They'll receive your message in both Chinese and English.",
+      "whatNext": "What happens next?",
+      "step1": "The center will review your enquiry and translated message",
+      "step2": "They'll contact you via your preferred method within 1-2 business days",
+      "step3": "You'll receive an email confirmation shortly",
+      "viewEnquiries": "View My Enquiries",
+      "backToSearch": "Back to Search",
+      "sendAnother": "Enquire at Another Center"
+    }
+  },
+  "guestEnquiry": {
+    "title": "Send Enquiry",
+    "subtitle": "No account needed — just tell us about your family",
+    "fields": {
+      "parentName": "Your name",
+      "parentNamePlaceholder": "Your full name",
+      "email": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone number (optional)",
+      "phonePlaceholder": "04XX XXX XXX",
+      "childAge": "Child's age",
+      "childAgePlaceholder": "e.g., 2.5 years old",
+      "message": "Your message",
+      "messagePlaceholder": "Tell the center about your family and what you're looking for. Feel free to write in Chinese!\n\ne.g., We have a 2.5 year old daughter and we're looking for a center with Mandarin-speaking staff..."
+    },
+    "translationPreview": {
+      "title": "Here's how your message will appear in English",
+      "instruction": "Edit or confirm:",
+      "confirmButton": "Looks good, send it",
+      "editButton": "Edit translation",
+      "retranslateButton": "Retranslate"
+    },
+    "submitButton": "Send Enquiry",
+    "submitting": "Sending your enquiry...",
+    "privacyNote": "Your information is shared only with this center. We never share your details with anyone else.",
+    "confirmation": {
+      "title": "Enquiry Sent!",
+      "message": "Your enquiry has been sent to {centerName}. They'll receive your message in both Chinese and English.",
+      "whatNext": "What happens next?",
+      "step1": "The center will review your enquiry within 1-2 business days",
+      "step2": "They'll contact you via your preferred method",
+      "step3": "Check your email for a confirmation"
+    },
+    "createAccountPrompt": "Want to track your enquiry? Create a free account",
+    "createAccountBenefits": "Save your details, track responses, and get personalised center matches",
+    "createAccountButton": "Create Free Account",
+    "continueWithout": "No thanks, I'll check my email"
+  },
+  "ccs": {
+    "title": "Understanding the Child Care Subsidy",
+    "subtitle": "The Australian Government helps families with childcare costs through the Child Care Subsidy (CCS).",
+    "whatIsCcs": "The Child Care Subsidy is a government payment that reduces what you pay for childcare. Most families who use approved childcare in Australia receive some level of CCS.",
+    "howItWorks": "How CCS Works",
+    "howItWorksDescription": "The subsidy is paid directly to your childcare center, which reduces your out-of-pocket fees. The amount you receive depends on your family income, the type of childcare, and how many hours of recognised activity (like work or study) you do.",
+    "incomeBrackets": {
+      "title": "How much could your family save?",
+      "bracket1": {
+        "income": "Family income under $80,000",
+        "subsidy": "Up to 90% subsidy",
+        "example": "A $150/day fee could cost as little as $15/day"
+      },
+      "bracket2": {
+        "income": "Family income $80,000 - $175,000",
+        "subsidy": "65-90% subsidy",
+        "example": "A $150/day fee could cost around $25-$50/day"
+      },
+      "bracket3": {
+        "income": "Family income $175,000 - $350,000",
+        "subsidy": "20-65% subsidy",
+        "example": "A $150/day fee could cost around $50-$120/day"
+      },
+      "bracket4": {
+        "income": "Family income over $350,000",
+        "subsidy": "Reduced or no subsidy",
+        "example": "You may pay the full daily fee"
+      }
+    },
+    "mostFamiliesSave": "Most families pay 50-85% less than the listed fee",
+    "ccsApprovedBadge": "This center is CCS-approved",
+    "ccsApprovedExplainer": "This means the government subsidy applies here — you pay the reduced rate, not the full fee.",
+    "faq": {
+      "title": "Common Questions About CCS",
+      "q1": {
+        "question": "How do I apply for the Child Care Subsidy?",
+        "answer": "You apply through your myGov account linked to Centrelink. You'll need your tax file number and income details. The center can help you get started."
+      },
+      "q2": {
+        "question": "Do I need to be an Australian citizen to get CCS?",
+        "answer": "You need to be an Australian resident. Permanent residents and some visa holders are eligible. Check with Centrelink or ask the center for guidance."
+      },
+      "q3": {
+        "question": "When does the subsidy start?",
+        "answer": "CCS can start from the first day your child attends an approved center, as long as your claim has been processed. Apply early to avoid delays."
+      },
+      "q4": {
+        "question": "Does CCS cover all types of childcare?",
+        "answer": "CCS covers approved Long Day Care, Family Day Care, and Outside School Hours Care. All centers on LittleBridge are CCS-approved unless otherwise noted."
+      },
+      "q5": {
+        "question": "Can I get help applying for CCS in Chinese?",
+        "answer": "Yes! You can call the Centrelink multilingual phone service (131 202) and request Mandarin or Cantonese interpretation. Many centers with bilingual staff can also help guide you through the process."
+      }
+    }
+  },
+  "emptyState": {
+    "noCentersTitle": "No centers in {suburb} yet",
+    "noCentersMessage": "We're still growing in your area, but we don't want you to miss out.",
+    "nearestCentersTitle": "But here are the nearest centers:",
+    "nearestCentersMessage": "These centers are a bit further away but have Mandarin-speaking staff:",
+    "waitlistTitle": "Get notified when a center in {suburb} joins",
+    "waitlistSubtitle": "Leave your email and we'll let you know as soon as a center near you is listed.",
+    "waitlistEmailPlaceholder": "your@email.com",
+    "waitlistButton": "Notify Me",
+    "waitlistSuccess": "We'll let you know when centers in {suburb} join LittleBridge.",
+    "growingMessage": "We're growing! New centers join every week.",
+    "demandSignal": "{count} other families in {suburb} are also looking",
+    "suggestCenter": "Know a great center in {suburb}? Let us know and we'll reach out to them.",
+    "suggestCenterButton": "Suggest a Center"
+  },
+  "valuesQuiz": {
+    "family": {
+      "title": "Values Match Quiz",
+      "subtitle": "Answer 5 quick questions to help us find centers that share your values (about 60 seconds)",
+      "skipButton": "Skip for now",
+      "question1": {
+        "label": "What's your preferred approach to learning?",
+        "option1": "Play-based, child-led exploration",
+        "option2": "Balanced mix of play and structured learning",
+        "option3": "More structured, academic readiness focused"
+      },
+      "question2": {
+        "label": "How important are cultural celebrations and events?",
+        "option1": "Very important — we'd love to see Chinese festivals celebrated",
+        "option2": "Somewhat important — nice to have but not essential",
+        "option3": "Not a priority — focus on Australian celebrations"
+      },
+      "question3": {
+        "label": "How often would you like updates about your child?",
+        "option1": "Daily photos and detailed updates",
+        "option2": "Weekly summaries are fine",
+        "option3": "Only when there's something important"
+      },
+      "question4": {
+        "label": "How important is outdoor time?",
+        "option1": "Very important — the more outdoor play the better",
+        "option2": "A good balance of indoor and outdoor",
+        "option3": "Indoor learning is the priority"
+      },
+      "question5": {
+        "label": "Meal preferences?",
+        "option1": "We'd love Asian meal options included",
+        "option2": "Flexible — as long as it's nutritious",
+        "option3": "Standard Australian menu is fine"
+      },
+      "complete": "Quiz complete! Your answers will help us find your best matches.",
+      "improvePrompt": "Want better matches? Take our 60-second values quiz",
+      "improveButton": "Take the Quiz"
+    },
+    "educator": {
+      "title": "Values Match Quiz",
+      "subtitle": "Help us match you with centers that share your approach to early childhood education",
+      "skipButton": "Skip for now",
+      "question1": {
+        "label": "What's your preferred teaching approach?",
+        "option1": "Play-based, child-led exploration",
+        "option2": "Balanced mix of play and structured activities",
+        "option3": "More structured, curriculum-focused"
+      },
+      "question2": {
+        "label": "How do you approach cultural programming?",
+        "option1": "Actively integrate multicultural celebrations and activities",
+        "option2": "Include cultural elements when opportunities arise",
+        "option3": "Focus on the standard curriculum"
+      },
+      "question3": {
+        "label": "How do you prefer to communicate with families?",
+        "option1": "Daily detailed updates with photos",
+        "option2": "Regular weekly communication",
+        "option3": "Updates when something important happens"
+      },
+      "question4": {
+        "label": "Your approach to outdoor play?",
+        "option1": "Maximise outdoor time — nature-based learning",
+        "option2": "Good balance of indoor and outdoor activities",
+        "option3": "Prioritise indoor structured learning"
+      },
+      "question5": {
+        "label": "Your view on bilingual programming?",
+        "option1": "Essential — should be integrated into daily routines",
+        "option2": "Valuable — dedicated bilingual sessions are great",
+        "option3": "Nice to have — English immersion is the priority"
+      },
+      "complete": "Quiz complete! This helps us match you with aligned centers."
+    },
+    "center": {
+      "title": "Values Match Quiz",
+      "subtitle": "Help families understand your center's approach — this powers match scores",
+      "skipButton": "Skip for now",
+      "question1": {
+        "label": "Your center's learning approach?",
+        "option1": "Play-based, child-led exploration",
+        "option2": "Balanced mix of play and structured learning",
+        "option3": "More structured, academic readiness focused"
+      },
+      "question2": {
+        "label": "Your approach to cultural events?",
+        "option1": "We actively celebrate Chinese and multicultural festivals",
+        "option2": "We include cultural elements when opportunities arise",
+        "option3": "We focus on Australian celebrations and events"
+      },
+      "question3": {
+        "label": "How do you communicate with families?",
+        "option1": "Daily detailed updates with photos",
+        "option2": "Regular weekly communication",
+        "option3": "Updates when something important happens"
+      },
+      "question4": {
+        "label": "Your approach to outdoor play?",
+        "option1": "We maximise outdoor time and nature-based learning",
+        "option2": "We balance indoor and outdoor activities",
+        "option3": "We prioritise indoor structured learning"
+      },
+      "question5": {
+        "label": "Your approach to meals?",
+        "option1": "We offer diverse menus including Asian cuisines",
+        "option2": "Flexible menu accommodating dietary requirements",
+        "option3": "Standard Australian menu"
+      },
+      "complete": "Quiz complete! Families will see how well your values match theirs."
+    }
+  },
+  "jobs": {
+    "browse": {
+      "title": "Bilingual Childcare Jobs",
+      "subtitle": "Find positions that value your bilingual skills",
+      "searchPlaceholder": "Enter suburb or postcode",
+      "filters": {
+        "location": "Location",
+        "distance": "Distance",
+        "employmentType": "Employment type",
+        "employmentOptions": {
+          "fullTime": "Full-time",
+          "partTime": "Part-time",
+          "casual": "Casual",
+          "contract": "Contract"
+        },
+        "languages": "Languages required",
+        "minimumPay": "Minimum pay ($/hr)",
+        "qualification": "Qualification level",
+        "applyFilters": "Apply Filters",
+        "clearFilters": "Clear Filters"
+      },
+      "sort": {
+        "label": "Sort by",
+        "matchScore": "Match Score",
+        "distance": "Distance",
+        "newest": "Newest",
+        "pay": "Pay (highest first)"
+      },
+      "results": {
+        "showing": "Showing {count} jobs",
+        "noResults": "No jobs found matching your criteria",
+        "noResultsMessage": "Try expanding your search area or adjusting your filters.",
+        "loginForScores": "Sign in to see personalised match scores"
+      }
+    },
+    "card": {
+      "postedBy": "Posted by {centerName}",
+      "postedDate": "Posted {date}",
+      "expiresDate": "Expires {date}",
+      "payRange": "${min}-${max}/hr",
+      "employmentType": "Type",
+      "location": "Location",
+      "languages": "Languages required",
+      "qualification": "Qualification",
+      "experience": "Experience",
+      "viewDetails": "View Details",
+      "expressInterest": "Express Interest",
+      "closed": "This position has been filled",
+      "expired": "This listing has expired"
+    },
+    "detail": {
+      "aboutRole": "About the Role",
+      "requirements": "Requirements",
+      "languagesRequired": "Languages Required",
+      "qualificationRequired": "Qualification Required",
+      "experienceRequired": "Experience Required",
+      "payRange": "Pay Range",
+      "startDate": "Start Date",
+      "employmentType": "Employment Type",
+      "visaSponsorship": "Visa Sponsorship",
+      "visaSponsorshipYes": "Visa sponsorship available",
+      "visaSponsorshipNo": "No visa sponsorship",
+      "aboutCenter": "About {centerName}",
+      "viewCenter": "View Center Profile",
+      "matchScore": "Your Match Score",
+      "expressInterestCta": "Express Interest in This Role",
+      "alreadyApplied": "You've already expressed interest in this role",
+      "applicationStatus": "Application status: {status}"
+    },
+    "expressInterest": {
+      "title": "Express Interest",
+      "subtitle": "Apply for {jobTitle} at {centerName}",
+      "coverNote": "Cover note",
+      "coverNotePlaceholder": "Tell the center why you're interested and what you'd bring to the role. You can write in Chinese or English.\n\ne.g., I'm very interested in this role because I have extensive bilingual teaching experience...",
+      "coverNoteHelp": "Your note will be translated for the center. Both versions will be sent.",
+      "availableToStart": "Available to start",
+      "availableOptions": {
+        "immediately": "Immediately",
+        "twoWeeks": "In 2 weeks",
+        "oneMonth": "In 1 month",
+        "flexible": "Flexible"
+      },
+      "interviewAvailability": "Interview availability",
+      "interviewPlaceholder": "e.g., Available weekday mornings, or any time next week",
+      "submitButton": "Submit Application",
+      "submitting": "Submitting your application..."
+    },
+    "expressInterestConfirmation": {
+      "title": "Application Sent!",
+      "message": "Your interest has been sent to {centerName} for the {jobTitle} role.",
+      "whatNext": "What happens next?",
+      "step1": "The center will review your profile and cover note",
+      "step2": "If interested, they'll contact you to arrange an interview",
+      "step3": "You'll receive an email confirmation shortly",
+      "viewApplications": "View My Applications",
+      "browseMore": "Browse More Jobs"
+    },
+    "postJob": {
+      "title": "Post a Job",
+      "subtitle": "Reach qualified bilingual educators",
+      "jobTitle": "Job title",
+      "jobTitlePlaceholder": "e.g., Bilingual Early Childhood Educator",
+      "employmentType": "Employment type",
+      "descriptionEn": "Job description (English)",
+      "descriptionEnPlaceholder": "Describe the role, responsibilities, and what makes this position unique. Highlight any bilingual programming opportunities.",
+      "descriptionZh": "Job description (Chinese)",
+      "descriptionZhHelp": "This will be auto-generated from your English description.",
+      "autoTranslateButton": "Auto-translate to Chinese",
+      "qualificationRequired": "Minimum qualification required",
+      "languagesRequired": "Languages required",
+      "addLanguage": "Add required language",
+      "experienceRequired": "Minimum experience required",
+      "payRangeMin": "Pay range minimum ($/hr)",
+      "payRangeMax": "Pay range maximum ($/hr)",
+      "startDate": "Preferred start date",
+      "visaSponsorship": "Visa sponsorship available?",
+      "submitButton": "Post Job",
+      "submitting": "Posting your job...",
+      "success": "Job posted successfully! It will be visible to educators immediately.",
+      "activeListings": "Active listings: {count} of 5",
+      "editJob": "Edit Job",
+      "closeJob": "Close Job",
+      "closeJobConfirm": "Are you sure you want to close this job listing? It will no longer appear in search results.",
+      "repostJob": "Repost Job"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {name}",
+    "center": {
+      "title": "Center Dashboard",
+      "overview": "Overview",
+      "profileCompleteness": "Profile completeness: {percent}%",
+      "completeProfile": "Complete your profile to start receiving enquiries",
+      "stats": {
+        "totalEnquiries": "Total Enquiries",
+        "newEnquiries": "New This Week",
+        "totalApplications": "Educator Applications",
+        "activeJobs": "Active Job Listings",
+        "thisWeek": "this week"
+      },
+      "quickActions": {
+        "title": "Quick Actions",
+        "editProfile": "Edit Center Profile",
+        "viewPublicProfile": "View Public Profile",
+        "postJob": "Post a New Job",
+        "manageSubscription": "Manage Subscription"
+      }
+    },
+    "enquiries": {
+      "title": "Enquiries",
+      "subtitle": "Manage enquiries from families",
+      "noEnquiries": "No enquiries yet",
+      "noEnquiriesMessage": "Once your profile is live, families will be able to send you enquiries.",
+      "table": {
+        "family": "Family",
+        "child": "Child",
+        "date": "Date",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "detail": {
+        "familyDetails": "Family Details",
+        "parentName": "Parent",
+        "childAge": "Child's age",
+        "daysNeeded": "Days needed",
+        "contactPreference": "Contact preference",
+        "preferredVisitDate": "Preferred visit date",
+        "message": "Message",
+        "centerNotes": "Your Notes",
+        "centerNotesPlaceholder": "Add private notes about this enquiry...",
+        "updateStatus": "Update Status",
+        "contactFamily": "Contact Family"
+      },
+      "statusOptions": {
+        "new": "New",
+        "contacted": "Contacted",
+        "visitScheduled": "Visit Scheduled",
+        "enrolled": "Enrolled",
+        "declined": "Declined"
+      }
+    },
+    "applications": {
+      "title": "Educator Applications",
+      "subtitle": "Review applications from bilingual educators",
+      "noApplications": "No applications yet",
+      "noApplicationsMessage": "Post a job to start receiving applications from bilingual educators.",
+      "table": {
+        "educator": "Educator",
+        "job": "Position",
+        "date": "Date",
+        "matchScore": "Match",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "detail": {
+        "educatorDetails": "Educator Details",
+        "name": "Name",
+        "languages": "Languages",
+        "qualification": "Qualification",
+        "experience": "Experience",
+        "currentSuburb": "Location",
+        "payExpectation": "Pay expectation",
+        "wwccStatus": "WWCC",
+        "coverNote": "Cover Note",
+        "availableToStart": "Available to start",
+        "interviewAvailability": "Interview availability",
+        "viewFullProfile": "View Full Profile",
+        "downloadResume": "Download Resume",
+        "matchScore": "Match Score",
+        "matchReasons": "Match Factors",
+        "centerNotes": "Your Notes",
+        "centerNotesPlaceholder": "Add private notes about this application...",
+        "updateStatus": "Update Status",
+        "contactEducator": "Contact Educator"
+      },
+      "statusOptions": {
+        "new": "New",
+        "reviewing": "Reviewing",
+        "interviewing": "Interviewing",
+        "offered": "Offered",
+        "hired": "Hired",
+        "declined": "Declined"
+      }
+    },
+    "subscription": {
+      "title": "Subscription",
+      "currentPlan": "Current Plan",
+      "planName": "LittleBridge for Centers",
+      "price": "$99/month",
+      "priceDetail": "incl. GST",
+      "status": "Status",
+      "active": "Active",
+      "trial": "Free Trial",
+      "trialDays": "{days} days remaining",
+      "pastDue": "Payment Past Due",
+      "cancelled": "Cancelled",
+      "inactive": "Inactive",
+      "nextBilling": "Next billing date",
+      "includes": "Your plan includes:",
+      "feature1": "Center profile listing",
+      "feature2": "Unlimited family enquiries",
+      "feature3": "Up to 5 active job listings",
+      "feature4": "Bilingual message translations",
+      "feature5": "Values-based match scores",
+      "manageButton": "Manage Subscription",
+      "manageViaStripe": "Manage billing via Stripe",
+      "reactivateButton": "Reactivate Subscription",
+      "foundingPartner": "Founding Partner",
+      "foundingPartnerLabel": "Free access — thank you for being an early supporter!"
+    },
+    "family": {
+      "title": "My Enquiries",
+      "noEnquiries": "You haven't sent any enquiries yet.",
+      "noEnquiriesMessage": "Search for centers near you and send enquiries to get started.",
+      "startSearching": "Start Searching",
+      "enquiryCard": {
+        "sentTo": "Enquiry to {centerName}",
+        "sentDate": "Sent {date}",
+        "status": "Status",
+        "viewCenter": "View Center",
+        "message": "Your message"
+      }
+    },
+    "educator": {
+      "title": "My Applications",
+      "noApplications": "You haven't applied to any jobs yet.",
+      "noApplicationsMessage": "Browse bilingual childcare jobs and express your interest.",
+      "browseJobs": "Browse Jobs",
+      "applicationCard": {
+        "appliedTo": "Applied for {jobTitle}",
+        "atCenter": "at {centerName}",
+        "appliedDate": "Applied {date}",
+        "status": "Status",
+        "viewJob": "View Job",
+        "coverNote": "Your cover note"
+      }
+    }
+  },
+  "subscription": {
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Everything you need to connect with bilingual families and educators",
+      "planTitle": "LittleBridge for Centers",
+      "price": "$99",
+      "period": "/month",
+      "gst": "incl. GST",
+      "trialBadge": "14-day free trial",
+      "feature1": "Center profile visible to bilingual families",
+      "feature2": "Unlimited family enquiries",
+      "feature3": "Bilingual message translations (Chinese to English)",
+      "feature4": "Up to 5 active job listings",
+      "feature5": "Values-based match scores",
+      "feature6": "Bilingual center description",
+      "roiTitle": "The ROI is clear:",
+      "roiLine1": "One enrolled family = $15,000-$25,000/year in revenue",
+      "roiLine2": "One educator hired = $3,000-$5,000 saved vs. agency fees",
+      "roiLine3": "LittleBridge costs less than a single Google Ad lead",
+      "ctaButton": "Start Free Trial",
+      "ctaSubtext": "No credit card required for trial",
+      "foundingPartner": {
+        "badge": "Limited Offer",
+        "title": "Founding Partner Program",
+        "description": "Be one of our first 10 center partners and receive 3 months free access. In return, we ask for a short testimonial and feedback to help us improve.",
+        "ctaButton": "Apply as Founding Partner",
+        "spotsRemaining": "Only {count} spots remaining",
+        "urgency": "Applications close when all 10 spots are filled"
+      }
+    },
+    "trial": {
+      "title": "Start Your Free Trial",
+      "subtitle": "14 days free. No credit card required. Cancel anytime.",
+      "startButton": "Start Free Trial",
+      "daysRemaining": "{days} days left in your free trial",
+      "trialEnding": "Your trial ends on {date}",
+      "upgradePrompt": "Upgrade to keep receiving enquiries and job applications",
+      "upgradeButton": "Subscribe Now"
+    },
+    "manage": {
+      "title": "Manage Subscription",
+      "portalButton": "Open Stripe Customer Portal",
+      "portalDescription": "Update your payment method, view invoices, or cancel your subscription.",
+      "cancelWarning": "If you cancel, your profile will remain visible but you won't receive new enquiries. Active job listings will be paused."
+    },
+    "lapsed": {
+      "title": "Subscription Inactive",
+      "message": "Your subscription has lapsed. Reactivate to continue receiving family enquiries and educator applications.",
+      "enquiriesHeld": "You have {count} held enquiries that will be released when you reactivate.",
+      "reactivateButton": "Reactivate Subscription"
+    },
+    "checkout": {
+      "processing": "Processing your payment...",
+      "success": "Payment successful! Welcome to LittleBridge.",
+      "cancelled": "Payment cancelled. No charges were made.",
+      "error": "There was an issue processing your payment. Please try again."
+    }
+  },
+  "foundingPartner": {
+    "badge": "Founding Partner",
+    "title": "Join as a Founding Partner",
+    "subtitle": "Be one of the first centers to shape how bilingual families find you",
+    "offer": "3 months completely free",
+    "offerDetail": "No credit card required. No obligation after the free period.",
+    "limitedSpots": "Limited to first 10 centers",
+    "spotsRemaining": "{count} of 10 spots remaining",
+    "whatWeAsk": "What we ask in return:",
+    "ask1": "A short testimonial about your experience",
+    "ask2": "Honest feedback to help us improve",
+    "ask3": "Permission to feature your center as a launch partner",
+    "applyButton": "Apply as Founding Partner",
+    "urgencyMessage": "Applications close when all spots are filled",
+    "alreadyPartner": "You're a Founding Partner! Thank you for your trust.",
+    "partnerSince": "Partner since {date}"
+  },
+  "about": {
+    "title": "About LittleBridge",
+    "founderStory": {
+      "title": "Built by a parent who understands",
+      "paragraph1": "Hi, I'm June. When I was looking for childcare for my own child, I spent weeks calling centers, struggling to find one with Mandarin-speaking staff who could make my child feel safe and understood.",
+      "paragraph2": "I realised every Chinese-Australian parent I knew had the same experience — scrolling through English-only websites, making anxious phone calls, never knowing which centers had bilingual staff until they visited in person.",
+      "paragraph3": "LittleBridge was born from that frustration. I built it so that no family has to go through what I went through — so that finding a center where your child feels at home is the beginning of the journey, not an impossible obstacle."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "statement": "To make bilingual childcare accessible to every family that needs it — so that children can be understood, comforted, and educated in the languages they speak at home."
+    },
+    "trust": {
+      "title": "Why You Can Trust Us",
+      "signal1": "Australian-owned and operated (ABN registered)",
+      "signal2": "Built and run by parents in Sydney and Melbourne",
+      "signal3": "Your data is protected by Australian privacy law — we never share your personal information",
+      "signal4": "Every center on LittleBridge is a real, licensed childcare provider",
+      "signal5": "Free to search and enquire — families never pay"
+    }
+  },
+  "privacy": {
+    "title": "Your Privacy",
+    "subtitle": "We take your family's privacy seriously. Here's the simple version:",
+    "dataLocation": "Your data is protected by Australian privacy law",
+    "dataLocationDetail": "All information is stored securely in the Asia-Pacific region and governed by Australian privacy legislation.",
+    "noSharing": "We never share your personal information",
+    "noSharingDetail": "Your details are only shared with centers you choose to enquire with. We never sell or share your data with third parties.",
+    "deleteAnytime": "You can delete your account at any time",
+    "deleteAnytimeDetail": "Request account deletion from your settings page and all your data will be permanently removed within 30 days.",
+    "childrenData": "Special protection for children's data",
+    "childrenDataDetail": "We collect minimal information about children (name, age, and care needs only). This information is used solely to match your family with suitable centers and is never used for marketing purposes.",
+    "contactUs": "Questions about your privacy? Contact us at privacy@littlebridge.com.au",
+    "fullPolicyLink": "Read the full Privacy Policy"
+  },
+  "emails": {
+    "subjects": {
+      "welcomeFamily": "Welcome to LittleBridge — let's find your perfect childcare match",
+      "welcomeEducator": "Welcome to LittleBridge — your bilingual career starts here",
+      "welcomeCenter": "Welcome to LittleBridge — start connecting with bilingual families",
+      "verifyEmail": "Verify your LittleBridge email address",
+      "resetPassword": "Reset your LittleBridge password",
+      "newEnquiry": "New enquiry from {familyName} for {centerName}",
+      "enquiryConfirmation": "Your enquiry to {centerName} has been sent",
+      "newApplication": "New educator application for {jobTitle}",
+      "applicationConfirmation": "Your application for {jobTitle} has been sent",
+      "trialStarted": "Your 14-day free trial has started",
+      "trialEnding": "Your LittleBridge trial ends in {days} days",
+      "paymentConfirmation": "Payment confirmed — LittleBridge subscription",
+      "paymentFailed": "Action required: Payment failed for your LittleBridge subscription",
+      "subscriptionCancelled": "Your LittleBridge subscription has been cancelled",
+      "guestEnquiryConfirmation": "Your enquiry to {centerName} has been sent — track it with a free account"
+    }
+  },
+  "meta": {
+    "titles": {
+      "home": "LittleBridge — Bilingual Childcare Marketplace | Sydney & Melbourne",
+      "search": "Find Bilingual Childcare Centers | LittleBridge",
+      "centerProfile": "{centerName} — Bilingual Childcare | LittleBridge",
+      "jobs": "Bilingual Childcare Jobs | LittleBridge",
+      "jobDetail": "{jobTitle} at {centerName} | LittleBridge Jobs",
+      "signIn": "Sign In | LittleBridge",
+      "signUp": "Create Account | LittleBridge",
+      "familyProfile": "Family Profile | LittleBridge",
+      "educatorProfile": "Educator Profile | LittleBridge",
+      "centerDashboard": "Center Dashboard | LittleBridge",
+      "pricing": "Pricing — $99/month | LittleBridge for Centers",
+      "privacy": "Privacy Policy | LittleBridge",
+      "terms": "Terms of Service | LittleBridge",
+      "about": "About Us | LittleBridge",
+      "ccs": "Understanding the Child Care Subsidy | LittleBridge"
+    },
+    "descriptions": {
+      "home": "LittleBridge connects Mandarin-speaking families with childcare centers and bilingual educators in Sydney and Melbourne. Search in Chinese or English.",
+      "search": "Search for childcare centers with Mandarin-speaking staff near you. Filter by language, location, and values match. Free to search.",
+      "jobs": "Find childcare jobs that truly value your bilingual skills. Mandarin, Cantonese, and English positions in Sydney and Melbourne.",
+      "pricing": "List your childcare center on LittleBridge for $99/month. Reach bilingual families and hire bilingual educators. 14-day free trial.",
+      "about": "LittleBridge was built by parents who understand the challenge of finding bilingual childcare in Australia.",
+      "ccs": "Understand the Child Care Subsidy in plain language. See how much your family could save on childcare fees."
+    },
+    "ogTags": {
+      "siteName": "LittleBridge",
+      "homeTitle": "LittleBridge — Find Bilingual Childcare",
+      "homeDescription": "Connecting Mandarin-speaking families with quality childcare in Sydney & Melbourne",
+      "homeImage": "/og-image-en.png",
+      "searchTitle": "Find Bilingual Centers Near You",
+      "searchDescription": "Search childcare centers with Mandarin-speaking staff",
+      "jobsTitle": "Bilingual Childcare Jobs",
+      "jobsDescription": "Find jobs that value your bilingual skills"
+    }
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "metrics": {
+      "title": "Platform Metrics",
+      "totalFamilies": "Total Families",
+      "totalEducators": "Total Educators",
+      "totalCenters": "Total Centers",
+      "totalEnquiries": "Total Enquiries",
+      "totalApplications": "Total Applications",
+      "thisWeek": "+{count} this week",
+      "enquiryConversion": "Enquiry-to-Enrollment Rate",
+      "payingCenters": "Paying Centers",
+      "mrr": "MRR"
+    },
+    "users": {
+      "title": "User Management",
+      "families": "Families",
+      "educators": "Educators",
+      "centers": "Centers",
+      "searchPlaceholder": "Search by name or email...",
+      "viewProfile": "View Profile",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "verifyWWCC": "Verify WWCC",
+      "overrideSubscription": "Override Subscription",
+      "lastActive": "Last active: {date}"
+    },
+    "activityLog": {
+      "title": "Activity Log",
+      "recentActions": "Last 50 actions",
+      "actor": "Actor",
+      "action": "Action",
+      "entity": "Entity",
+      "timestamp": "Timestamp"
+    }
+  },
+  "onboarding": {
+    "welcome": {
+      "title": "Welcome to LittleBridge!",
+      "subtitle": "Let's set up your profile — it only takes a minute.",
+      "familyMessage": "We'll help you find centers near you with Mandarin-speaking staff.",
+      "educatorMessage": "We'll help you find centers that truly value your bilingual skills.",
+      "centerMessage": "We'll help you connect with bilingual families and educators."
+    },
+    "steps": {
+      "basicInfo": "Basic Info",
+      "details": "Details",
+      "preferences": "Preferences",
+      "complete": "Done!"
+    },
+    "complete": {
+      "title": "You're all set!",
+      "familyMessage": "Start searching for centers near you. We'll show you which ones have Mandarin-speaking staff.",
+      "educatorMessage": "Your profile is now visible to centers. Browse jobs that match your skills and preferences.",
+      "centerMessage": "Your center is live! Bilingual families can now find you and send enquiries.",
+      "familyCta": "Find Centers",
+      "educatorCta": "Browse Jobs",
+      "centerCta": "Go to Dashboard"
+    }
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "languageToggle": "Switch to Chinese",
+    "searchIcon": "Search",
+    "closeDialog": "Close dialog",
+    "previousPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
+    "requiredField": "Required field",
+    "optionalField": "Optional field",
+    "externalLink": "Opens in a new window"
+  },
+  "sharing": {
+    "shareTitle": "Check out {name} on LittleBridge",
+    "shareDescription": "I found this on LittleBridge — a bilingual childcare platform for Mandarin-speaking families.",
+    "copySuccess": "Link copied to clipboard!",
+    "wechatShare": "Share on WeChat",
+    "wechatInstruction": "Open WeChat and scan the QR code, or paste the link"
+  },
+  "translationFeedback": {
+    "helpful": "Is this translation accurate?",
+    "yes": "Yes",
+    "no": "Needs improvement",
+    "thanks": "Thank you for your feedback!"
+  }
+}

@@ -1,0 +1,1601 @@
+{
+  "common": {
+    "appName": "小桥",
+    "tagline": "连接双语家庭、教育工作者与托儿中心",
+    "language": {
+      "en": "English",
+      "zh": "中文",
+      "toggle": "切换语言",
+      "current": "中文"
+    },
+    "nav": {
+      "home": "首页",
+      "findCenters": "查找托儿中心",
+      "findJobs": "查找工作",
+      "forFamilies": "家庭专区",
+      "forEducators": "教育工作者专区",
+      "forCenters": "托儿中心专区",
+      "signIn": "登录",
+      "signUp": "注册",
+      "dashboard": "管理面板",
+      "profile": "个人资料",
+      "settings": "设置",
+      "signOut": "退出登录",
+      "admin": "管理后台",
+      "postJob": "发布职位"
+    },
+    "footer": {
+      "about": "关于小桥",
+      "aboutText": "小桥致力于为华人家庭与重视双语文化教育的托儿中心和教育工作者搭建沟通的桥梁。",
+      "quickLinks": "快捷链接",
+      "forFamilies": "家庭专区",
+      "forEducators": "教育工作者专区",
+      "forCenters": "托儿中心专区",
+      "legal": "法律信息",
+      "privacyPolicy": "隐私政策",
+      "termsOfService": "服务条款",
+      "contact": "联系我们",
+      "email": "hello@littlebridge.com.au",
+      "copyright": "© {year} LittleBridge 小桥 版权所有",
+      "builtWith": "用心打造于悉尼和墨尔本",
+      "followUs": "关注我们",
+      "xiaohongshu": "小红书",
+      "wechat": "微信"
+    },
+    "buttons": {
+      "submit": "提交",
+      "cancel": "取消",
+      "save": "保存",
+      "saveChanges": "保存更改",
+      "delete": "删除",
+      "edit": "编辑",
+      "back": "返回",
+      "next": "下一步",
+      "previous": "上一步",
+      "close": "关闭",
+      "confirm": "确认",
+      "continue": "继续",
+      "getStarted": "开始使用",
+      "learnMore": "了解更多",
+      "viewAll": "查看全部",
+      "viewDetails": "查看详情",
+      "search": "搜索",
+      "clear": "清除",
+      "clearAll": "全部清除",
+      "apply": "应用",
+      "reset": "重置",
+      "upload": "上传",
+      "download": "下载",
+      "share": "分享",
+      "copyLink": "复制链接",
+      "linkCopied": "链接已复制！",
+      "tryAgain": "重试",
+      "goBack": "返回上页",
+      "goHome": "返回首页",
+      "seeMore": "查看更多",
+      "seeLess": "收起",
+      "showAll": "展开全部",
+      "hideAll": "收起全部",
+      "yes": "是",
+      "no": "否"
+    },
+    "errors": {
+      "generic": "出了点问题，请稍后再试。",
+      "network": "网络连接错误，请检查网络后重试。",
+      "notFound": "页面未找到",
+      "notFoundMessage": "您要访问的页面不存在或已被移除。",
+      "unauthorized": "请先登录后再访问此页面。",
+      "forbidden": "您没有权限访问此页面。",
+      "serverError": "服务器错误，我们的团队已收到通知。",
+      "validationError": "请检查表单中的错误信息。",
+      "required": "此项为必填",
+      "invalidEmail": "请输入有效的电子邮箱地址",
+      "invalidPhone": "请输入有效的澳大利亚手机号码",
+      "invalidPostcode": "请输入有效的澳大利亚邮编",
+      "invalidABN": "请输入有效的ABN（11位数字）",
+      "passwordTooShort": "密码至少需要8个字符",
+      "passwordMismatch": "两次输入的密码不一致",
+      "fileTooLarge": "文件太大，最大不超过{maxSize}MB。",
+      "invalidFileType": "文件格式不正确，支持的格式：{formats}",
+      "rateLimited": "操作过于频繁，请稍后再试。",
+      "enquiryLimit": "您已达到今日咨询上限（每天5次），请明天再试。",
+      "jobPostLimit": "您已达到职位发布上限（最多5个在线职位），请先关闭已有职位再发布新职位。",
+      "sessionExpired": "登录已过期，请重新登录。",
+      "subscriptionRequired": "此功能需要有效订阅才能使用。"
+    },
+    "loading": "加载中...",
+    "saving": "保存中...",
+    "submitting": "提交中...",
+    "noResults": "未找到结果",
+    "noResultsMessage": "请尝试调整搜索条件或扩大搜索范围。",
+    "bilingualVersion": "双语版本",
+    "originalMessage": "原文",
+    "translatedMessage": "译文",
+    "translationPreview": "发送前预览英文翻译",
+    "optional": "选填",
+    "required": "必填",
+    "characters": "{count}个字符",
+    "itemsCount": "{count}项",
+    "perMonth": "/月",
+    "inclGST": "含GST",
+    "aud": "澳元",
+    "km": "公里",
+    "mins": "分钟",
+    "days": {
+      "monday": "星期一",
+      "tuesday": "星期二",
+      "wednesday": "星期三",
+      "thursday": "星期四",
+      "friday": "星期五",
+      "saturday": "星期六",
+      "sunday": "星期日",
+      "mon": "周一",
+      "tue": "周二",
+      "wed": "周三",
+      "thu": "周四",
+      "fri": "周五",
+      "sat": "周六",
+      "sun": "周日"
+    },
+    "childcareTerms": {
+      "ccs": "儿童保育补贴 (CCS)",
+      "nqs": "国家质量标准 (NQS)",
+      "wwcc": "儿童工作检查 (WWCC)",
+      "acecqa": "澳大利亚儿童教育和护理质量管理局 (ACECQA)",
+      "ect": "幼儿教师 (ECT)",
+      "longDayCare": "全日制托儿所",
+      "familyDayCare": "家庭式托儿",
+      "oshc": "课外托管服务 (OSHC)",
+      "diploma": "幼儿教育文凭",
+      "certificate": "幼儿教育三级证书",
+      "bachelor": "幼儿教育学士学位",
+      "firstAid": "急救和心肺复苏术"
+    },
+    "status": {
+      "active": "活跃",
+      "inactive": "未激活",
+      "pending": "待处理",
+      "verified": "已验证",
+      "unverified": "未验证",
+      "new": "新咨询",
+      "contacted": "已联系",
+      "enquiryReceived": "已收到咨询",
+      "enrolled": "已入学",
+      "declined": "已婉拒",
+      "interviewing": "面试中",
+      "offered": "已发送录用",
+      "hired": "已入职",
+      "closed": "已关闭",
+      "paused": "已暂停",
+      "expired": "已过期"
+    },
+    "languages": {
+      "mandarin": "普通话",
+      "cantonese": "粤语",
+      "english": "英语",
+      "other": "其他"
+    },
+    "proficiency": {
+      "native": "母语",
+      "fluent": "流利",
+      "conversational": "日常会话",
+      "basic": "基础"
+    },
+    "ageGroups": {
+      "infant": "婴儿班 (0-1岁)",
+      "toddler": "小小班 (1-2岁)",
+      "preschool": "小班 (2-3岁)",
+      "kindergarten": "中大班 (3-5岁)",
+      "schoolAge": "学龄班 (5岁+)"
+    },
+    "vacancyStatus": {
+      "available": "有空位",
+      "limited": "少量名额",
+      "waitlist": "仅候补",
+      "full": "已满"
+    }
+  },
+  "landing": {
+    "hero": {
+      "titleLine1": "为孩子的双语未来",
+      "titleLine2": "选择最好的起点",
+      "subtitle": "无论是想让孩子保持母语，还是希望爷爷奶奶能和老师顺畅沟通——在这里找到真正重视双语教育的托儿中心。",
+      "ctaFamily": "查找附近托儿中心",
+      "ctaEducator": "查找双语职位",
+      "ctaCenter": "注册您的托儿中心",
+      "trustedBy": "深受悉尼和墨尔本华人家庭信赖"
+    },
+    "valueProp": {
+      "title": "为什么选择小桥？",
+      "subtitle": "我们为双语家庭与优质托儿中心搭建沟通的桥梁",
+      "card1": {
+        "title": "真正的双语课程",
+        "description": "不只是'我们有一位中文员工'。找到有系统化中文课程、双语教学计划、员工每天真正使用两种语言的托儿中心。"
+      },
+      "card2": {
+        "title": "让文化融入日常",
+        "description": "从庆祝春节到理解饮食偏好，找到让您家庭的文化成为日常生活一部分的中心——而不只是墙上的一张海报。"
+      },
+      "card3": {
+        "title": "全家都能沟通",
+        "description": "无论是您自己、爸爸妈妈还是公公婆婆来接送——每个人都能和老师交流。用中文或英文发咨询，中心会收到双语版本。"
+      }
+    },
+    "forFamilies": {
+      "sectionTitle": "家庭专区",
+      "title": "找到让孩子有家的感觉的托儿中心",
+      "description": "按位置、双语课程和您的家庭需求搜索。查看哪些中心有中文员工、系统化的双语课程和空位——全程支持中英文。",
+      "benefit1": "找到有系统化中文课程的托儿中心",
+      "benefit2": "查看哪些员工会说普通话、粤语或两者都会",
+      "benefit3": "用中文或英文咨询——中心会收到双语版本",
+      "benefit4": "也适合负责接送的爷爷奶奶、外公外婆",
+      "cta": "开始搜索"
+    },
+    "forEducators": {
+      "sectionTitle": "教育工作者专区",
+      "title": "找到真正重视双语技能的托儿中心",
+      "description": "不要再做可有可无的\"双语加分项\"。找到真正投入双语教育、为您的双语技能支付合理薪资的托儿中心。",
+      "benefit1": "专门招聘双语教育工作者的职位",
+      "benefit2": "根据资质和偏好的智能匹配",
+      "benefit3": "真正重视双语课程建设的托儿中心",
+      "benefit4": "体现双语技能价值的有竞争力的薪资",
+      "cta": "浏览职位"
+    },
+    "forCenters": {
+      "sectionTitle": "托儿中心专区",
+      "title": "吸引重视您所提供服务的家庭",
+      "description": "触达正在积极寻找双语托儿服务的家庭——从中文家庭到希望孩子接受沉浸式中文教育的英语家庭。同时找到优秀的双语教育工作者。",
+      "benefit1": "触达专门寻找双语课程的家庭",
+      "benefit2": "收到中英双语咨询信息",
+      "benefit3": "免中介费招聘双语教育工作者",
+      "benefit4": "投资回报：每个入学家庭 = 每年$15,000-$25,000收入",
+      "cta": "注册您的托儿中心",
+      "pricing": "每月$99起——14天免费试用"
+    },
+    "socialProof": {
+      "title": "用户怎么说",
+      "testimonial1": {
+        "quote": "我英文没有问题——这不是我用小桥的原因。我用它是因为我想让女儿像我一样自然地说中文。以前根本找不到有真正双语课程的中心。",
+        "author": "Wei",
+        "role": "家长，Burwood"
+      },
+      "testimonial2": {
+        "quote": "每个托儿中心都说他们重视多元文化。但我想去一个真正把双语教育融入课程的中心工作。",
+        "author": "Sophie",
+        "role": "双语教育工作者，墨尔本"
+      },
+      "testimonial3": {
+        "quote": "我婆婆每周三天来接孩子，她完全不会说英文。知道有老师能跟她聊聊儿子今天过得怎么样——这对我们来说太重要了。",
+        "author": "Michelle",
+        "role": "家长，Epping"
+      },
+      "stats": {
+        "families": "{count}+ 个家庭",
+        "educators": "{count}+ 位教育工作者",
+        "centers": "{count}+ 家托儿中心",
+        "suburbs": "覆盖{count}个社区"
+      }
+    },
+    "cta": {
+      "title": "准备好找到最合适的选择了吗？",
+      "subtitle": "加入小桥，与真正理解您家庭的双语托儿中心建立连接。",
+      "familyButton": "我是家长",
+      "educatorButton": "我是教育工作者",
+      "centerButton": "我是中心园长"
+    },
+    "howItWorks": {
+      "title": "使用流程",
+      "family": {
+        "step1": {
+          "title": "创建家庭资料",
+          "description": "告诉我们您的家庭情况、孩子的年龄，以及您最看重什么。"
+        },
+        "step2": {
+          "title": "搜索和匹配",
+          "description": "浏览附近的托儿中心，查看基于语言、距离和价值观的匹配信息。"
+        },
+        "step3": {
+          "title": "用中文咨询",
+          "description": "用中文发送咨询信息，中心会收到专业的英文翻译。"
+        },
+        "step4": {
+          "title": "联系中心",
+          "description": "收到中心回复后，在您方便的时候安排参观。"
+        }
+      },
+      "educator": {
+        "step1": {
+          "title": "创建个人档案",
+          "description": "展示您的双语技能、专业资质和工作经验。"
+        },
+        "step2": {
+          "title": "浏览职位",
+          "description": "找到专门看重双语教育工作者的职位。"
+        },
+        "step3": {
+          "title": "表达意向",
+          "description": "提交双语求职信，中心可以看到您的匹配分数。"
+        },
+        "step4": {
+          "title": "成功入职",
+          "description": "加入真正投入双语课程建设的托儿中心。"
+        }
+      }
+    }
+  },
+  "auth": {
+    "signUp": {
+      "title": "创建账户",
+      "subtitle": "加入小桥，连接双语托儿服务",
+      "emailLabel": "电子邮箱",
+      "emailPlaceholder": "your@email.com",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "至少8个字符",
+      "confirmPasswordLabel": "确认密码",
+      "confirmPasswordPlaceholder": "再次输入密码",
+      "submitButton": "创建账户",
+      "googleButton": "使用Google账号注册",
+      "orDivider": "或",
+      "hasAccount": "已有账户？",
+      "signInLink": "立即登录",
+      "termsAgreement": "注册即表示您同意我们的{termsLink}和{privacyLink}。",
+      "termsLink": "服务条款",
+      "privacyLink": "隐私政策",
+      "success": "账户创建成功！请查看邮箱完成验证。"
+    },
+    "signIn": {
+      "title": "欢迎回来",
+      "subtitle": "登录您的小桥账户",
+      "emailLabel": "电子邮箱",
+      "emailPlaceholder": "your@email.com",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "输入您的密码",
+      "rememberMe": "记住我",
+      "forgotPassword": "忘记密码？",
+      "submitButton": "登录",
+      "googleButton": "使用Google账号登录",
+      "orDivider": "或",
+      "noAccount": "还没有账户？",
+      "signUpLink": "立即注册",
+      "error": "邮箱或密码不正确，请重试。"
+    },
+    "forgotPassword": {
+      "title": "重置密码",
+      "subtitle": "输入您的邮箱，我们将发送重置链接。",
+      "emailLabel": "电子邮箱",
+      "emailPlaceholder": "your@email.com",
+      "submitButton": "发送重置链接",
+      "backToSignIn": "返回登录",
+      "success": "重置链接已发送，请查看您的邮箱。",
+      "resetTitle": "设置新密码",
+      "resetSubtitle": "请在下方输入新密码。",
+      "newPasswordLabel": "新密码",
+      "newPasswordPlaceholder": "至少8个字符",
+      "confirmNewPasswordLabel": "确认新密码",
+      "resetButton": "重置密码",
+      "resetSuccess": "密码重置成功，您现在可以登录了。"
+    },
+    "roleSelection": {
+      "title": "您将如何使用小桥？",
+      "subtitle": "选择您的角色以个性化您的体验。之后可以随时更改。",
+      "family": {
+        "title": "我是家长",
+        "description": "为孩子寻找有双语员工、懂得关爱的托儿中心"
+      },
+      "educator": {
+        "title": "我是教育工作者",
+        "description": "寻找重视双语技能的托儿工作"
+      },
+      "center": {
+        "title": "我是中心园长",
+        "description": "吸引双语家庭并招聘双语教育工作者"
+      },
+      "continueButton": "以{role}身份继续"
+    },
+    "verification": {
+      "title": "验证您的邮箱",
+      "message": "我们已向 {email} 发送了验证链接。请查看收件箱（包括垃圾邮件文件夹）完成验证。",
+      "resend": "重新发送验证邮件",
+      "resendSuccess": "验证邮件已重新发送。",
+      "resendCooldown": "请等待{seconds}秒后再重新发送。"
+    }
+  },
+  "familyProfile": {
+    "title": "家庭资料",
+    "subtitle": "告诉我们您的家庭情况，我们将为您找到最合适的托儿中心",
+    "completeness": "资料完成度 {percent}%",
+    "completeProfileLater": "稍后完善资料",
+    "addPhotoPrompt": "上传照片可获得3倍以上的回复",
+    "addChildPrompt": "填写孩子信息，获得更精准的中心推荐",
+    "addSuburbPrompt": "添加您所在社区，查看附近的托儿中心",
+    "fields": {
+      "parentName": "家长姓名",
+      "parentNamePlaceholder": "您的全名",
+      "chineseName": "中文姓名",
+      "chineseNamePlaceholder": "中文名字（选填）",
+      "email": "电子邮箱",
+      "phone": "手机号码",
+      "phonePlaceholder": "04XX XXX XXX",
+      "wechatId": "微信号",
+      "wechatIdPlaceholder": "您的微信号（选填）",
+      "suburb": "所在社区",
+      "suburbPlaceholder": "输入您的社区名称...",
+      "postcode": "邮编",
+      "communicationLanguage": "首选沟通语言",
+      "communicationLanguageHelp": "中心将尽可能使用此语言与您沟通",
+      "additionalNotes": "补充说明",
+      "additionalNotesPlaceholder": "还有什么想让中心了解的？（可以用中文或英文书写）",
+      "additionalNotesHelp": "您的留言将自动翻译给托儿中心"
+    },
+    "children": {
+      "title": "孩子信息",
+      "addChild": "添加孩子",
+      "removeChild": "移除",
+      "childName": "孩子姓名",
+      "childNamePlaceholder": "名字",
+      "dateOfBirth": "出生日期",
+      "daysPerWeek": "每周需要的天数",
+      "daysHelp": "每周需要几天托儿服务？",
+      "ageDisplay": "{years}岁{months}个月"
+    },
+    "priorities": {
+      "title": "您的优先需求",
+      "subtitle": "选择对您家庭最重要的方面（最多选5项）",
+      "bilingualEducation": "双语教育",
+      "culturalUnderstanding": "文化理解",
+      "proximity": "离家近",
+      "cost": "费用合理",
+      "outdoorPlay": "户外活动和自然探索",
+      "academicReadiness": "学前准备",
+      "mealQuality": "优质餐食和营养",
+      "smallGroups": "小班教学",
+      "extendedHours": "延长服务时间",
+      "inclusiveProgram": "包容多元的课程"
+    },
+    "saveSuccess": "家庭资料保存成功！",
+    "completeProfilePrompt": "完善您的资料，即可查看与各中心的个性化匹配信息。"
+  },
+  "educatorProfile": {
+    "title": "教育工作者档案",
+    "subtitle": "展示您的双语技能，找到真正重视双语教育的托儿中心",
+    "completeness": "档案完成度 {percent}%",
+    "completeProfileLater": "稍后完善资料",
+    "addPhotoPrompt": "上传照片，获得更多中心的关注",
+    "addResumePrompt": "上传简历，让中心更了解您的专业背景",
+    "fields": {
+      "fullName": "全名",
+      "fullNamePlaceholder": "您的全名",
+      "phone": "手机号码",
+      "phonePlaceholder": "04XX XXX XXX",
+      "suburb": "所在社区",
+      "suburbPlaceholder": "输入您的社区名称...",
+      "bio": "个人简介",
+      "bioPlaceholder": "向中心介绍您的工作经验、双语能力和教学理念。可以用中文或英文书写——系统会自动翻译。",
+      "bioHelp": "您的简介将以中英双语展示给中心",
+      "profilePhoto": "个人照片",
+      "profilePhotoHelp": "上传一张专业照片（JPG或PNG，最大5MB）",
+      "resume": "简历",
+      "resumeHelp": "上传您的简历（PDF，最大10MB）",
+      "visibility": "档案可见性",
+      "visibilityOn": "对中心可见",
+      "visibilityOff": "从搜索中隐藏",
+      "visibilityHelp": "设为可见后，中心可以在搜索中找到您并主动联系您"
+    },
+    "qualifications": {
+      "title": "资质与经验",
+      "highestQualification": "最高学历",
+      "qualificationOptions": {
+        "bachelor": "幼儿教育学士学位",
+        "diploma": "幼儿教育文凭",
+        "certificateIII": "幼儿教育三级证书",
+        "other": "其他相关资质",
+        "studying": "在读中"
+      },
+      "wwccNumber": "儿童工作检查 (WWCC) 编号",
+      "wwccNumberPlaceholder": "输入您的WWCC编号",
+      "wwccState": "WWCC所在州",
+      "wwccExpiry": "WWCC有效期至",
+      "wwccDisclaimer": "WWCC信息为自行申报。中心可能会独立核实您的状态。",
+      "firstAidCurrent": "急救和心肺复苏术是否有效？",
+      "firstAidExpiry": "急救证书有效期至",
+      "yearsExperience": "托儿行业工作年限",
+      "experienceOptions": {
+        "lessThan1": "不到1年",
+        "oneToTwo": "1-2年",
+        "threeToFive": "3-5年",
+        "sixToTen": "6-10年",
+        "moreThanTen": "10年以上"
+      }
+    },
+    "languages": {
+      "title": "语言能力",
+      "subtitle": "您的双语技能是最大的竞争优势——告诉中心您能提供什么",
+      "addLanguage": "添加语言",
+      "removeLanguage": "移除",
+      "language": "语言",
+      "proficiency": "熟练程度",
+      "languageOptions": {
+        "mandarin": "普通话",
+        "cantonese": "粤语",
+        "english": "英语",
+        "other": "其他"
+      },
+      "proficiencyOptions": {
+        "native": "母语水平",
+        "fluent": "流利——专业工作水平",
+        "conversational": "日常会话——可以自如沟通",
+        "basic": "基础——简单词句和问候"
+      }
+    },
+    "preferences": {
+      "title": "求职偏好",
+      "employmentType": "工作类型偏好",
+      "employmentOptions": {
+        "fullTime": "全职",
+        "partTime": "兼职",
+        "casual": "临时",
+        "contract": "合同制",
+        "any": "均可考虑"
+      },
+      "payRange": "期望薪资范围",
+      "payMin": "最低（$/小时）",
+      "payMax": "最高（$/小时）",
+      "maxCommute": "最远通勤距离",
+      "commuteOptions": {
+        "5km": "5公里",
+        "10km": "10公里",
+        "15km": "15公里",
+        "20km": "20公里",
+        "30km": "30公里",
+        "any": "不限距离"
+      }
+    },
+    "saveSuccess": "教育工作者档案保存成功！",
+    "completeProfilePrompt": "完善您的档案，让中心在搜索中找到您，并查看职位匹配分数。"
+  },
+  "educators": {
+    "signup": {
+      "title": "找到真正重视您双语技能的托儿中心",
+      "subtitle": "加入小桥，与正在寻找普通话和粤语教育工作者的托儿中心建立联系。永远不收取任何中介费。",
+      "benefit1": "在真正开展双语课程的中心工作",
+      "benefit2": "无需支付任何招聘中介费",
+      "benefit3": "根据您的语言能力、位置和偏好智能匹配",
+      "trust": "已有{count}+位双语教育工作者注册",
+      "formTitle": "提交注册意向",
+      "fields": {
+        "fullName": "全名",
+        "fullNamePlaceholder": "您的全名",
+        "email": "电子邮箱",
+        "emailPlaceholder": "your@email.com",
+        "phone": "手机号码（选填）",
+        "phonePlaceholder": "04XX XXX XXX",
+        "suburb": "所在社区",
+        "suburbPlaceholder": "例如：Chatswood, 2067",
+        "languages": "您会说的语言",
+        "languagesMandarin": "普通话",
+        "languagesCantonese": "粤语",
+        "languagesEnglish": "英语",
+        "languagesOther": "其他",
+        "qualification": "最高学历",
+        "qualificationOptions": {
+          "cert3": "幼儿教育三级证书",
+          "diploma": "幼儿教育文凭",
+          "bachelor": "学士学位",
+          "masters": "硕士或博士学位",
+          "other": "其他"
+        },
+        "wwcc": "您是否持有有效的儿童工作检查 (WWCC)？",
+        "wwccYes": "是",
+        "wwccNo": "否",
+        "wwccUnsure": "不确定"
+      },
+      "submitButton": "提交注册意向",
+      "privacy": "我们只会就相关工作机会与您联系，未经您的许可，绝不分享您的信息。",
+      "success": {
+        "title": "您已成功注册！",
+        "message": "当{suburb}附近的中心招聘双语教育工作者时，我们会第一时间通知您。",
+        "browseCenters": "浏览托儿中心",
+        "duplicate": "您已经注册过了！我们会尽快与您联系。"
+      }
+    }
+  },
+  "centerProfile": {
+    "title": "中心资料",
+    "subtitle": "设置中心资料，吸引双语家庭和教育工作者",
+    "completeness": "资料完成度 {percent}%",
+    "publicProfile": "查看公开页面",
+    "completeProfileLater": "稍后完善资料",
+    "addPhotoPrompt": "上传中心照片，吸引更多家庭关注",
+    "addDescriptionPrompt": "添加中心介绍，帮助家庭了解您的特色",
+    "fields": {
+      "centerName": "中心名称",
+      "centerNamePlaceholder": "例如：Bright Horizons Early Learning",
+      "abn": "ABN",
+      "abnPlaceholder": "11位ABN编号",
+      "address": "街道地址",
+      "addressPlaceholder": "详细街道地址",
+      "suburb": "社区",
+      "suburbPlaceholder": "输入社区名称...",
+      "state": "州",
+      "postcode": "邮编",
+      "phone": "联系电话",
+      "phonePlaceholder": "(02) XXXX XXXX 或 04XX XXX XXX",
+      "email": "联系邮箱",
+      "emailPlaceholder": "centre@email.com",
+      "website": "网站",
+      "websitePlaceholder": "https://www.yourcentre.com.au",
+      "descriptionEn": "中心介绍（英文）",
+      "descriptionEnPlaceholder": "介绍您的中心、教育理念和独特之处。重点描述双语家庭关心的信息。",
+      "descriptionZh": "中心介绍（中文）",
+      "descriptionZhHelp": "系统将根据您的英文介绍自动生成中文版本，您可以在此基础上进行修改。",
+      "autoTranslateButton": "自动翻译为中文",
+      "translating": "翻译中...",
+      "operatingHours": "开放时间",
+      "openTime": "开始时间",
+      "closeTime": "结束时间",
+      "feeRange": "费用范围",
+      "feeFrom": "最低（$/天）",
+      "feeTo": "最高（$/天）",
+      "feeHelp": "申请儿童保育补贴 (CCS) 前的每日费用"
+    },
+    "photos": {
+      "title": "中心照片",
+      "subtitle": "上传最多10张中心照片（户外区域、教室、餐食、活动等）",
+      "upload": "上传照片",
+      "dragDrop": "拖放照片到此处，或点击浏览",
+      "maxPhotos": "最多上传10张照片",
+      "photoCount": "已上传 {count}/10 张照片",
+      "remove": "移除照片",
+      "reorder": "拖动排序"
+    },
+    "ageGroups": {
+      "title": "年龄组和空位",
+      "subtitle": "选择您接收的年龄组及当前空位情况",
+      "ageGroup": "年龄组",
+      "capacity": "名额",
+      "vacancy": "空位状态"
+    },
+    "staffLanguages": {
+      "title": "员工语言能力",
+      "subtitle": "告诉家庭您的员工会说哪些语言——这是您最大的差异化优势",
+      "addLanguage": "添加语言",
+      "language": "语言",
+      "staffCount": "员工人数",
+      "staffCountHelp": "有多少员工会说这种语言？"
+    },
+    "programs": {
+      "title": "课程与特色",
+      "subtitle": "选择您中心提供的课程和特色服务",
+      "bilingualProgram": "双语教育课程",
+      "bilingualProgramDetail": "结构化的中英双语教学课程",
+      "culturalProgram": "多元文化庆典活动",
+      "culturalProgramDetail": "庆祝中国传统节日和多元文化节日",
+      "stemProgram": "STEM / 科学课程",
+      "outdoorProgram": "自然 / 户外学习",
+      "musicProgram": "音乐律动",
+      "artProgram": "美术创意",
+      "cookingProgram": "烹饪课程",
+      "excursions": "定期外出活动",
+      "mealsIncluded": "包含餐食",
+      "asianMealOptions": "提供亚洲餐食选择",
+      "nappiesIncluded": "包含尿布/防晒霜",
+      "pickupService": "接送服务"
+    },
+    "nqsRatings": {
+      "title": "国家质量标准评级",
+      "subtitle": "您的NQS评级",
+      "rating": "当前NQS评级",
+      "ratingOptions": {
+        "excellent": "卓越 (Excellent)",
+        "exceeding": "超越标准 (Exceeding NQS)",
+        "meeting": "达到标准 (Meeting NQS)",
+        "workingTowards": "努力达标中 (Working Towards NQS)",
+        "requiresImprovement": "需要显著改进",
+        "notYetAssessed": "尚未评估"
+      },
+      "nqsHelp": "您的NQS评级在ACECQA网站上公开可查"
+    },
+    "claim": {
+      "title": "认领您的中心",
+      "subtitle": "已在列表中？认领您的中心资料，管理咨询并吸引双语家庭。",
+      "searchPlaceholder": "搜索您的中心名称...",
+      "notFound": "找不到您的中心？直接创建新的中心资料。",
+      "claimButton": "认领此中心",
+      "createNew": "创建新中心资料"
+    },
+    "saveSuccess": "中心资料保存成功！",
+    "completeProfilePrompt": "完善您的资料，让家庭在搜索结果中找到您并发送咨询。"
+  },
+  "search": {
+    "title": "查找托儿中心",
+    "subtitle": "搜索附近有双语员工的托儿中心",
+    "searchPlaceholder": "输入社区名称或邮编",
+    "filters": {
+      "title": "筛选条件",
+      "location": "位置",
+      "distance": "距离",
+      "distanceOptions": {
+        "5km": "5公里以内",
+        "10km": "10公里以内",
+        "15km": "15公里以内",
+        "20km": "20公里以内"
+      },
+      "languages": "员工语言",
+      "ageGroup": "年龄组",
+      "vacancyOnly": "仅显示有空位",
+      "programs": "课程",
+      "nqsRating": "NQS评级",
+      "applyFilters": "应用筛选",
+      "clearFilters": "清除所有筛选",
+      "activeFilters": "{count}个筛选条件"
+    },
+    "sort": {
+      "label": "排序方式",
+      "distance": "距离",
+      "matchScore": "匹配度",
+      "newest": "最新发布"
+    },
+    "results": {
+      "showing": "显示{count}家中心",
+      "showingOf": "显示第{count}家，共{total}家中心",
+      "nearLocation": "{location}附近",
+      "noResults": "未找到符合条件的中心",
+      "noResultsMessage": "请尝试扩大搜索范围或调整筛选条件。",
+      "noResultsSuggestion": "以下是更大范围内的中心：",
+      "loginForScores": "登录后查看个性化匹配信息",
+      "completeProfileForScores": "完善个人资料后查看匹配信息"
+    },
+    "centerCard": {
+      "languages": "使用语言",
+      "distance": "距您{distance}公里",
+      "vacancy": "空位",
+      "ageGroups": "年龄组",
+      "feeRange": "${min}-${max}/天",
+      "feeBeforeCCS": "CCS补贴前",
+      "nqsRating": "NQS评级：{rating}",
+      "viewProfile": "查看详情",
+      "sendEnquiry": "发送咨询",
+      "staffCount": "{count}位会说{language}的员工"
+    },
+    "factorBadges": {
+      "mandarinSpoken": "有普通话员工",
+      "cantoneseSpoken": "有粤语员工",
+      "distanceAway": "距您{distance}公里",
+      "vacanciesAvailable": "有空位",
+      "bilingualProgram": "双语课程",
+      "ccsApproved": "可申请补贴",
+      "sharedValues": "理念相符",
+      "rightAgeGroup": "适合年龄段",
+      "culturalProgram": "文化节日活动"
+    },
+    "map": {
+      "showMap": "显示地图",
+      "hideMap": "隐藏地图",
+      "viewOnMap": "在地图上查看"
+    }
+  },
+  "centerPage": {
+    "aboutSection": "关于我们",
+    "photosSection": "中心照片",
+    "programsSection": "课程与特色",
+    "languagesSection": "使用语言",
+    "ageGroupsSection": "年龄组和空位",
+    "feesSection": "收费标准",
+    "hoursSection": "开放时间",
+    "locationSection": "位置",
+    "nqsSection": "质量评级",
+    "sendEnquiryCta": "发送咨询",
+    "shareCenter": "分享此中心",
+    "directionsCta": "获取路线",
+    "websiteLink": "访问网站",
+    "phoneLink": "拨打电话",
+    "matchScore": "您的匹配度",
+    "noMatchScore": "登录后查看匹配信息",
+    "staffLanguages": "{count}位员工会说{language}",
+    "ccsApproved": "可申请政府补贴 (CCS认可)",
+    "operatingHoursLabel": "{open} - {close}，周一至周五",
+    "feeDisplay": "每天${min} - ${max}（CCS补贴前）",
+    "lastUpdated": "资料最近更新于{date}"
+  },
+  "centerDetail": {
+    "acecqaLink": "查看政府质量评估报告",
+    "acecqaHelp": "由澳大利亚政府进行的独立质量评估",
+    "foundingPartner": "创始合作伙伴 \u00b7 亲自验证",
+    "foundingPartnerTooltip": "我们的创始人June亲自拜访并验证了这家中心。",
+    "reviews": {
+      "title": "家长评价",
+      "empty": "成为第一个分享在{centerName}体验的家庭",
+      "comingSoon": "评价功能即将上线",
+      "writeReview": "写评价"
+    }
+  },
+  "enquiry": {
+    "form": {
+      "title": "发送咨询",
+      "subtitle": "关于 {centerName} 的咨询",
+      "subtitleHelp": "您可以用中文写咨询信息——中心会收到专业的英文翻译。",
+      "preferredDateTime": "方便参观的时间（选填）",
+      "preferredDateTimePlaceholder": "例如：下周二上午，或者工作日下午都可以",
+      "message": "您的留言",
+      "messagePlaceholder": "告诉中心您的家庭情况和需求。欢迎用中文书写！\n\n例如：我们家有一个两岁半的女儿，正在找能说中文的托儿所...",
+      "messageHelp": "您的留言将被翻译后发送给中心，原文和翻译都会一起发送。",
+      "contactPreference": "中心如何联系您？",
+      "contactOptions": {
+        "email": "电子邮件",
+        "phone": "电话",
+        "wechat": "微信"
+      },
+      "prefilledFrom": "已从您的资料自动填写",
+      "editProfile": "编辑资料",
+      "submitButton": "发送咨询",
+      "submitting": "正在发送您的咨询...",
+      "translationPreviewTitle": "以下是中心将看到的英文翻译",
+      "translationPreviewEdit": "您可以修改或确认：",
+      "translationPreviewConfirm": "没问题，发送吧",
+      "translationPreviewRetranslate": "重新翻译",
+      "privacyNote": "您的信息仅会分享给这家中心，我们绝不会将您的信息透露给其他人。"
+    },
+    "confirmation": {
+      "title": "咨询已发送！",
+      "message": "您的咨询已发送至{centerName}。他们会收到您的中英文双语信息。",
+      "whatNext": "接下来会怎样？",
+      "step1": "中心将查看您的咨询和翻译后的信息",
+      "step2": "他们将在1-2个工作日内通过您选择的方式联系您",
+      "step3": "您将很快收到一封确认邮件",
+      "viewEnquiries": "查看我的咨询",
+      "backToSearch": "返回搜索",
+      "sendAnother": "咨询其他中心"
+    }
+  },
+  "guestEnquiry": {
+    "title": "发送咨询",
+    "subtitle": "无需注册——直接告诉我们您的需求",
+    "fields": {
+      "parentName": "您的姓名",
+      "parentNamePlaceholder": "您的全名",
+      "email": "电子邮箱",
+      "emailPlaceholder": "your@email.com",
+      "phone": "手机号码（选填）",
+      "phonePlaceholder": "04XX XXX XXX",
+      "childAge": "孩子年龄",
+      "childAgePlaceholder": "例如：2岁半",
+      "message": "您的留言",
+      "messagePlaceholder": "告诉中心您的家庭情况和需求。欢迎用中文书写！\n\n例如：我们家有一个两岁半的女儿，正在找能说中文的托儿所..."
+    },
+    "translationPreview": {
+      "title": "以下是中心将看到的英文翻译",
+      "instruction": "您可以修改或确认：",
+      "confirmButton": "没问题，发送吧",
+      "editButton": "修改翻译",
+      "retranslateButton": "重新翻译"
+    },
+    "submitButton": "发送咨询",
+    "submitting": "正在发送您的咨询...",
+    "privacyNote": "您的信息仅会分享给这家中心，我们绝不会将您的信息透露给其他人。",
+    "confirmation": {
+      "title": "咨询已发送！",
+      "message": "您的咨询已发送至{centerName}。他们会收到您的中英文双语信息。",
+      "whatNext": "接下来会怎样？",
+      "step1": "中心将在1-2个工作日内查看您的咨询",
+      "step2": "他们将通过您选择的方式联系您",
+      "step3": "请查看您的邮箱获取确认信息"
+    },
+    "createAccountPrompt": "想随时查看咨询进度？免费创建账户",
+    "createAccountBenefits": "保存您的信息、跟踪回复、获得个性化的中心推荐",
+    "createAccountButton": "免费创建账户",
+    "continueWithout": "暂时不用，我会查看邮箱"
+  },
+  "ccs": {
+    "title": "了解儿童保育补贴",
+    "subtitle": "澳大利亚政府通过儿童保育补贴 (CCS) 帮助家庭减轻托儿费用负担。",
+    "whatIsCcs": "儿童保育补贴是政府发放的一项补贴，可以大幅减少您的托儿费用支出。在澳大利亚，绝大多数使用正规托儿服务的家庭都能获得不同程度的CCS补贴。",
+    "howItWorks": "CCS是怎么运作的？",
+    "howItWorksDescription": "补贴由政府直接支付给托儿中心，相当于帮您减免了一部分费用。您能获得多少补贴，取决于家庭收入、托儿类型以及您的工作或学习时长。",
+    "incomeBrackets": {
+      "title": "您的家庭大概能省多少？",
+      "bracket1": {
+        "income": "家庭年收入低于$80,000",
+        "subsidy": "最高可补贴90%",
+        "example": "每天$150的费用，实际只需约$15"
+      },
+      "bracket2": {
+        "income": "家庭年收入 $80,000 - $175,000",
+        "subsidy": "可补贴65-90%",
+        "example": "每天$150的费用，实际约需$25-$50"
+      },
+      "bracket3": {
+        "income": "家庭年收入 $175,000 - $350,000",
+        "subsidy": "可补贴20-65%",
+        "example": "每天$150的费用，实际约需$50-$120"
+      },
+      "bracket4": {
+        "income": "家庭年收入超过$350,000",
+        "subsidy": "补贴减少或无补贴",
+        "example": "可能需要支付全额费用"
+      }
+    },
+    "mostFamiliesSave": "大多数家庭实际只需支付标价的15-50%",
+    "ccsApprovedBadge": "本中心已获CCS认可",
+    "ccsApprovedExplainer": "这意味着您可以在这里申请政府补贴——您支付的是补贴后的金额，而不是全价。",
+    "faq": {
+      "title": "关于CCS的常见问题",
+      "q1": {
+        "question": "怎么申请儿童保育补贴？",
+        "answer": "通过您的myGov账户连接Centrelink来申请。您需要提供税号和收入信息。很多托儿中心的中文员工也可以帮您了解申请流程。"
+      },
+      "q2": {
+        "question": "我需要是澳大利亚公民才能申请吗？",
+        "answer": "您需要是澳大利亚居民。永久居民和部分签证持有者都符合条件。具体情况可以咨询Centrelink或向中心的中文员工了解。"
+      },
+      "q3": {
+        "question": "补贴什么时候开始生效？",
+        "answer": "只要您的申请已获批准，CCS可以从孩子第一天入园就开始生效。建议尽早申请，避免延误。"
+      },
+      "q4": {
+        "question": "CCS适用于所有类型的托儿服务吗？",
+        "answer": "CCS适用于获批的全日制托儿所、家庭式托儿和课外托管服务。小桥上的所有中心都是CCS认可的（除非另有说明）。"
+      },
+      "q5": {
+        "question": "我可以用中文咨询CCS的事情吗？",
+        "answer": "可以的！您可以拨打Centrelink多语言服务热线 (131 202)，要求普通话或粤语翻译服务。很多有中文员工的托儿中心也能帮您了解申请流程。"
+      }
+    }
+  },
+  "emptyState": {
+    "noCentersTitle": "{suburb}暂时还没有入驻中心",
+    "noCentersMessage": "我们还在不断扩展覆盖范围，不想让您空手而归。",
+    "nearestCentersTitle": "不过，这些附近的中心可能适合您：",
+    "nearestCentersMessage": "虽然稍远一些，但这些中心都有会说中文的员工：",
+    "waitlistTitle": "当{suburb}有新中心入驻时通知我",
+    "waitlistSubtitle": "留下您的邮箱，有新中心加入时我们第一时间告诉您。",
+    "waitlistEmailPlaceholder": "your@email.com",
+    "waitlistButton": "通知我",
+    "waitlistSuccess": "好的！当{suburb}有新中心加入小桥时，我们会第一时间通知您。",
+    "growingMessage": "我们每周都有新中心加入，覆盖范围持续扩大中！",
+    "demandSignal": "{suburb}还有{count}个家庭也在关注",
+    "suggestCenter": "您知道{suburb}有不错的托儿中心吗？告诉我们，我们来联系他们。",
+    "suggestCenterButton": "推荐一家中心"
+  },
+  "valuesQuiz": {
+    "family": {
+      "title": "价值观匹配测试",
+      "subtitle": "回答5个简短问题，帮助我们找到与您理念一致的中心（约60秒）",
+      "skipButton": "暂时跳过",
+      "question1": {
+        "label": "您倾向于哪种学习方式？",
+        "option1": "以游戏为主、孩子主导的探索",
+        "option2": "游戏和结构化学习的平衡结合",
+        "option3": "偏向结构化、注重学前准备"
+      },
+      "question2": {
+        "label": "文化节日和活动对您有多重要？",
+        "option1": "非常重要——希望看到中国节日的庆祝活动",
+        "option2": "比较重要——有的话很好，但不是必须的",
+        "option3": "不太在意——侧重澳大利亚的节日就好"
+      },
+      "question3": {
+        "label": "您希望多久收到一次孩子的动态？",
+        "option1": "每天的照片和详细汇报",
+        "option2": "每周的总结就好",
+        "option3": "有重要事情时再通知就行"
+      },
+      "question4": {
+        "label": "户外活动对您有多重要？",
+        "option1": "非常重要——户外玩耍越多越好",
+        "option2": "室内外活动保持良好平衡",
+        "option3": "室内学习是重点"
+      },
+      "question5": {
+        "label": "餐食偏好？",
+        "option1": "希望有中餐等亚洲饮食选择",
+        "option2": "灵活安排——营养均衡就好",
+        "option3": "标准澳式菜单就可以"
+      },
+      "complete": "测试完成！您的回答将帮助我们为您找到最匹配的中心。",
+      "improvePrompt": "想获得更精准的推荐？做一个60秒的价值观小测试",
+      "improveButton": "开始测试"
+    },
+    "educator": {
+      "title": "价值观匹配测试",
+      "subtitle": "帮助我们将您与教育理念一致的中心进行匹配",
+      "skipButton": "暂时跳过",
+      "question1": {
+        "label": "您偏好的教学方式是什么？",
+        "option1": "以游戏为主、孩子主导的探索",
+        "option2": "游戏和结构化活动的平衡",
+        "option3": "偏向结构化、课程导向"
+      },
+      "question2": {
+        "label": "您如何看待多元文化教学？",
+        "option1": "积极融入多元文化庆典和活动",
+        "option2": "在合适的时候融入文化元素",
+        "option3": "专注于标准课程"
+      },
+      "question3": {
+        "label": "您倾向于如何与家长沟通？",
+        "option1": "每天提供详细的文字和照片更新",
+        "option2": "定期每周沟通",
+        "option3": "有重要事情时再更新"
+      },
+      "question4": {
+        "label": "您对户外活动的态度？",
+        "option1": "尽量多安排户外时间——自然教育",
+        "option2": "室内外活动保持良好平衡",
+        "option3": "优先室内结构化学习"
+      },
+      "question5": {
+        "label": "您如何看待双语课程？",
+        "option1": "非常重要——应融入日常教学",
+        "option2": "很有价值——安排专门的双语课程也很好",
+        "option3": "锦上添花——英语沉浸式是重点"
+      },
+      "complete": "测试完成！这将帮助我们为您匹配理念一致的中心。"
+    },
+    "center": {
+      "title": "价值观匹配测试",
+      "subtitle": "帮助家庭了解您中心的教育理念——这是匹配信息的重要依据",
+      "skipButton": "暂时跳过",
+      "question1": {
+        "label": "您中心的教学方式？",
+        "option1": "以游戏为主、孩子主导的探索",
+        "option2": "游戏和结构化学习的平衡结合",
+        "option3": "偏向结构化、注重学前准备"
+      },
+      "question2": {
+        "label": "您如何对待文化活动？",
+        "option1": "我们积极庆祝中国和多元文化节日",
+        "option2": "我们在合适的时候融入文化元素",
+        "option3": "我们侧重澳大利亚的节日和活动"
+      },
+      "question3": {
+        "label": "您如何与家长沟通？",
+        "option1": "每天提供详细的文字和照片更新",
+        "option2": "定期每周沟通",
+        "option3": "有重要事情时再通知"
+      },
+      "question4": {
+        "label": "您对户外活动的态度？",
+        "option1": "我们尽量多安排户外时间和自然教育",
+        "option2": "我们平衡室内外活动",
+        "option3": "我们优先室内结构化学习"
+      },
+      "question5": {
+        "label": "您的餐食安排？",
+        "option1": "我们提供包括亚洲菜在内的多元菜单",
+        "option2": "灵活菜单，满足各种饮食需求",
+        "option3": "标准澳式菜单"
+      },
+      "complete": "测试完成！家庭将看到您的价值观与他们的匹配程度。"
+    }
+  },
+  "jobs": {
+    "browse": {
+      "title": "双语托儿职位",
+      "subtitle": "找到重视双语技能的工作机会",
+      "searchPlaceholder": "输入社区名称或邮编",
+      "filters": {
+        "location": "位置",
+        "distance": "距离",
+        "employmentType": "工作类型",
+        "employmentOptions": {
+          "fullTime": "全职",
+          "partTime": "兼职",
+          "casual": "临时",
+          "contract": "合同制"
+        },
+        "languages": "语言要求",
+        "minimumPay": "最低薪资（$/小时）",
+        "qualification": "学历要求",
+        "applyFilters": "应用筛选",
+        "clearFilters": "清除筛选"
+      },
+      "sort": {
+        "label": "排序方式",
+        "matchScore": "匹配度",
+        "distance": "距离",
+        "newest": "最新发布",
+        "pay": "薪资（从高到低）"
+      },
+      "results": {
+        "showing": "显示{count}个职位",
+        "noResults": "未找到符合条件的职位",
+        "noResultsMessage": "请尝试扩大搜索范围或调整筛选条件。",
+        "loginForScores": "登录后查看个性化匹配分数"
+      }
+    },
+    "card": {
+      "postedBy": "发布方：{centerName}",
+      "postedDate": "发布于{date}",
+      "expiresDate": "截止于{date}",
+      "payRange": "${min}-${max}/小时",
+      "employmentType": "类型",
+      "location": "地点",
+      "languages": "语言要求",
+      "qualification": "学历要求",
+      "experience": "经验要求",
+      "viewDetails": "查看详情",
+      "expressInterest": "表达意向",
+      "closed": "此职位已招到合适人选",
+      "expired": "此招聘已过期"
+    },
+    "detail": {
+      "aboutRole": "关于此职位",
+      "requirements": "岗位要求",
+      "languagesRequired": "语言要求",
+      "qualificationRequired": "学历要求",
+      "experienceRequired": "经验要求",
+      "payRange": "薪资范围",
+      "startDate": "入职日期",
+      "employmentType": "工作类型",
+      "visaSponsorship": "签证担保",
+      "visaSponsorshipYes": "可提供签证担保",
+      "visaSponsorshipNo": "不提供签证担保",
+      "aboutCenter": "关于{centerName}",
+      "viewCenter": "查看中心详情",
+      "matchScore": "您的匹配分数",
+      "expressInterestCta": "对此职位表达意向",
+      "alreadyApplied": "您已对此职位表达过意向",
+      "applicationStatus": "申请状态：{status}"
+    },
+    "expressInterest": {
+      "title": "表达意向",
+      "subtitle": "申请{centerName}的{jobTitle}职位",
+      "coverNote": "求职信",
+      "coverNotePlaceholder": "告诉中心您为什么对这个职位感兴趣，以及您能带来什么。可以用中文或英文书写。\n\n例如：我对这个职位非常感兴趣，因为我有丰富的双语教学经验...",
+      "coverNoteHelp": "您的求职信将被翻译后发送给中心，原文和翻译都会一起发送。",
+      "availableToStart": "可开始工作时间",
+      "availableOptions": {
+        "immediately": "立即可以",
+        "twoWeeks": "两周后",
+        "oneMonth": "一个月后",
+        "flexible": "灵活安排"
+      },
+      "interviewAvailability": "面试时间",
+      "interviewPlaceholder": "例如：工作日上午有空，或下周任何时间都可以",
+      "submitButton": "提交申请",
+      "submitting": "正在提交您的申请..."
+    },
+    "expressInterestConfirmation": {
+      "title": "申请已发送！",
+      "message": "您对{centerName}的{jobTitle}职位的申请已发送。",
+      "whatNext": "接下来会怎样？",
+      "step1": "中心将查看您的档案和求职信",
+      "step2": "如有兴趣，他们会联系您安排面试",
+      "step3": "您将很快收到一封确认邮件",
+      "viewApplications": "查看我的申请",
+      "browseMore": "浏览更多职位"
+    },
+    "postJob": {
+      "title": "发布职位",
+      "subtitle": "吸引优秀的双语教育工作者",
+      "jobTitle": "职位名称",
+      "jobTitlePlaceholder": "例如：双语幼儿教育工作者",
+      "employmentType": "工作类型",
+      "descriptionEn": "职位描述（英文）",
+      "descriptionEnPlaceholder": "描述该职位的职责和特别之处，突出双语教育的发展机会。",
+      "descriptionZh": "职位描述（中文）",
+      "descriptionZhHelp": "系统将根据您的英文描述自动生成中文版本。",
+      "autoTranslateButton": "自动翻译为中文",
+      "qualificationRequired": "最低学历要求",
+      "languagesRequired": "语言要求",
+      "addLanguage": "添加语言要求",
+      "experienceRequired": "最低经验要求",
+      "payRangeMin": "薪资范围最低（$/小时）",
+      "payRangeMax": "薪资范围最高（$/小时）",
+      "startDate": "期望入职日期",
+      "visaSponsorship": "是否可提供签证担保？",
+      "submitButton": "发布职位",
+      "submitting": "正在发布职位...",
+      "success": "职位发布成功！教育工作者现在可以看到您的招聘信息。",
+      "activeListings": "在线职位：{count}/5",
+      "editJob": "编辑职位",
+      "closeJob": "关闭职位",
+      "closeJobConfirm": "确定要关闭此职位吗？关闭后将不再出现在搜索结果中。",
+      "repostJob": "重新发布"
+    }
+  },
+  "dashboard": {
+    "welcome": "欢迎回来，{name}",
+    "center": {
+      "title": "中心管理面板",
+      "overview": "概览",
+      "profileCompleteness": "资料完成度：{percent}%",
+      "completeProfile": "完善您的资料以开始接收咨询",
+      "stats": {
+        "totalEnquiries": "总咨询量",
+        "newEnquiries": "本周新咨询",
+        "totalApplications": "教育者申请",
+        "activeJobs": "在线职位",
+        "thisWeek": "本周"
+      },
+      "quickActions": {
+        "title": "快捷操作",
+        "editProfile": "编辑中心资料",
+        "viewPublicProfile": "查看公开页面",
+        "postJob": "发布新职位",
+        "manageSubscription": "管理订阅"
+      }
+    },
+    "enquiries": {
+      "title": "家庭咨询",
+      "subtitle": "管理来自家庭的咨询",
+      "noEnquiries": "还没有收到咨询",
+      "noEnquiriesMessage": "您的资料上线后，家庭就可以向您发送咨询了。",
+      "table": {
+        "family": "家庭",
+        "child": "孩子",
+        "date": "日期",
+        "status": "状态",
+        "actions": "操作"
+      },
+      "detail": {
+        "familyDetails": "家庭信息",
+        "parentName": "家长",
+        "childAge": "孩子年龄",
+        "daysNeeded": "需要天数",
+        "contactPreference": "联系方式偏好",
+        "preferredVisitDate": "方便参观的时间",
+        "message": "留言",
+        "centerNotes": "您的备注",
+        "centerNotesPlaceholder": "添加关于此咨询的私人备注...",
+        "updateStatus": "更新状态",
+        "contactFamily": "联系家庭"
+      },
+      "statusOptions": {
+        "new": "新咨询",
+        "contacted": "已联系",
+        "visitScheduled": "已安排参观",
+        "enrolled": "已入学",
+        "declined": "已婉拒"
+      }
+    },
+    "applications": {
+      "title": "教育者申请",
+      "subtitle": "查看双语教育工作者的申请",
+      "noApplications": "还没有收到申请",
+      "noApplicationsMessage": "发布职位后即可开始接收双语教育工作者的申请。",
+      "table": {
+        "educator": "教育工作者",
+        "job": "应聘职位",
+        "date": "日期",
+        "matchScore": "匹配度",
+        "status": "状态",
+        "actions": "操作"
+      },
+      "detail": {
+        "educatorDetails": "教育者信息",
+        "name": "姓名",
+        "languages": "语言能力",
+        "qualification": "学历",
+        "experience": "工作经验",
+        "currentSuburb": "所在地",
+        "payExpectation": "期望薪资",
+        "wwccStatus": "儿童工作检查",
+        "coverNote": "求职信",
+        "availableToStart": "可开始时间",
+        "interviewAvailability": "面试时间",
+        "viewFullProfile": "查看完整档案",
+        "downloadResume": "下载简历",
+        "matchScore": "匹配分数",
+        "matchReasons": "匹配因素",
+        "centerNotes": "您的备注",
+        "centerNotesPlaceholder": "添加关于此申请的私人备注...",
+        "updateStatus": "更新状态",
+        "contactEducator": "联系教育工作者"
+      },
+      "statusOptions": {
+        "new": "新申请",
+        "reviewing": "审核中",
+        "interviewing": "面试中",
+        "offered": "已发送录用",
+        "hired": "已入职",
+        "declined": "已婉拒"
+      }
+    },
+    "subscription": {
+      "title": "订阅管理",
+      "currentPlan": "当前方案",
+      "planName": "小桥托儿中心版",
+      "price": "$99/月",
+      "priceDetail": "含GST",
+      "status": "状态",
+      "active": "已激活",
+      "trial": "免费试用中",
+      "trialDays": "还剩{days}天",
+      "pastDue": "付款逾期",
+      "cancelled": "已取消",
+      "inactive": "未激活",
+      "nextBilling": "下次扣费日期",
+      "includes": "您的方案包含：",
+      "feature1": "中心资料展示",
+      "feature2": "无限家庭咨询",
+      "feature3": "最多5个在线职位",
+      "feature4": "中英双语信息翻译",
+      "feature5": "价值观匹配评分",
+      "manageButton": "管理订阅",
+      "manageViaStripe": "通过Stripe管理账单",
+      "reactivateButton": "重新激活订阅",
+      "foundingPartner": "创始合作伙伴",
+      "foundingPartnerLabel": "免费使用——感谢您作为早期支持者的信任！"
+    },
+    "family": {
+      "title": "我的咨询",
+      "noEnquiries": "您还没有发送过咨询。",
+      "noEnquiriesMessage": "搜索附近的托儿中心并发送咨询开始吧。",
+      "startSearching": "开始搜索",
+      "enquiryCard": {
+        "sentTo": "发送至{centerName}的咨询",
+        "sentDate": "发送于{date}",
+        "status": "状态",
+        "viewCenter": "查看中心",
+        "message": "您的留言"
+      }
+    },
+    "educator": {
+      "title": "我的申请",
+      "noApplications": "您还没有申请过任何职位。",
+      "noApplicationsMessage": "浏览双语托儿职位并表达您的意向。",
+      "browseJobs": "浏览职位",
+      "applicationCard": {
+        "appliedTo": "申请职位：{jobTitle}",
+        "atCenter": "所在中心：{centerName}",
+        "appliedDate": "申请于{date}",
+        "status": "状态",
+        "viewJob": "查看职位",
+        "coverNote": "您的求职信"
+      }
+    }
+  },
+  "subscription": {
+    "pricing": {
+      "title": "简洁透明的定价",
+      "subtitle": "连接双语家庭和教育工作者所需的一切",
+      "planTitle": "小桥托儿中心版",
+      "price": "$99",
+      "period": "/月",
+      "gst": "含GST",
+      "trialBadge": "14天免费试用",
+      "feature1": "中心资料向双语家庭展示",
+      "feature2": "无限家庭咨询接收",
+      "feature3": "中英双语信息翻译",
+      "feature4": "最多5个在线招聘职位",
+      "feature5": "价值观匹配评分",
+      "feature6": "中英双语中心介绍",
+      "roiTitle": "投资回报一目了然：",
+      "roiLine1": "一个入学家庭 = 每年$15,000-$25,000收入",
+      "roiLine2": "一次成功招聘 = 节省$3,000-$5,000中介费",
+      "roiLine3": "小桥的费用低于一次Google广告的获客成本",
+      "ctaButton": "开始免费试用",
+      "ctaSubtext": "试用期间无需信用卡",
+      "foundingPartner": {
+        "badge": "限时优惠",
+        "title": "创始合作伙伴计划",
+        "description": "成为我们的前10家合作中心，即可获得3个月免费使用权。作为回报，我们希望您提供一段简短的使用感言和改进建议。",
+        "ctaButton": "申请成为创始合作伙伴",
+        "spotsRemaining": "仅剩{count}个名额",
+        "urgency": "名额满即截止"
+      }
+    },
+    "trial": {
+      "title": "开始免费试用",
+      "subtitle": "14天免费体验，无需信用卡，随时取消。",
+      "startButton": "开始免费试用",
+      "daysRemaining": "免费试用还剩{days}天",
+      "trialEnding": "试用期将于{date}结束",
+      "upgradePrompt": "升级以继续接收咨询和职位申请",
+      "upgradeButton": "立即订阅"
+    },
+    "manage": {
+      "title": "管理订阅",
+      "portalButton": "打开Stripe客户门户",
+      "portalDescription": "更新付款方式、查看发票或取消订阅。",
+      "cancelWarning": "如果取消订阅，您的资料仍然可见，但将无法接收新的咨询。在线的招聘职位也将被暂停。"
+    },
+    "lapsed": {
+      "title": "订阅已失效",
+      "message": "您的订阅已过期。重新激活以继续接收家庭咨询和教育工作者的申请。",
+      "enquiriesHeld": "您有{count}条待处理的咨询，重新激活后将立即释放。",
+      "reactivateButton": "重新激活订阅"
+    },
+    "checkout": {
+      "processing": "正在处理您的付款...",
+      "success": "付款成功！欢迎加入小桥。",
+      "cancelled": "付款已取消，未产生任何费用。",
+      "error": "处理付款时出现问题，请重试。"
+    }
+  },
+  "foundingPartner": {
+    "badge": "创始合作伙伴",
+    "title": "成为创始合作伙伴",
+    "subtitle": "率先加入，共同打造华人家庭找到您的方式",
+    "offer": "3个月完全免费",
+    "offerDetail": "无需信用卡。免费期结束后没有任何义务。",
+    "limitedSpots": "仅限前10家中心",
+    "spotsRemaining": "10个名额中还剩{count}个",
+    "whatWeAsk": "我们希望您：",
+    "ask1": "分享一段简短的使用体验",
+    "ask2": "提供真诚的改进建议",
+    "ask3": "允许我们将您作为首批合作中心展示",
+    "applyButton": "申请成为创始合作伙伴",
+    "urgencyMessage": "名额满即截止",
+    "alreadyPartner": "您已是创始合作伙伴！感谢您的信任。",
+    "partnerSince": "合作始于{date}"
+  },
+  "about": {
+    "title": "关于小桥",
+    "founderStory": {
+      "title": "一位妈妈的心声",
+      "paragraph1": "你好，我是June。当初为自己的孩子找托儿中心时，我花了好几周时间打电话、跑中心，就想找一家有中文老师的——一个能在孩子不安时听懂他说什么、能给他温暖回应的人。",
+      "paragraph2": "后来我发现，身边几乎每一位华人妈妈都有同样的经历——面对全英文的网站不知从何下手，打电话用英文磕磕绊绊地问\"你们有没有会说中文的老师\"，在一次次失望中感到无助。",
+      "paragraph3": "小桥就是从这份感同身受中诞生的。我希望每一个华人家庭都不必再经历我当初的焦虑——找到一个让孩子有家的感觉的托儿中心，应该是旅程的起点，而不是一道难关。"
+    },
+    "mission": {
+      "title": "我们的使命",
+      "statement": "让每一个需要双语托儿服务的家庭都能轻松找到——让孩子在自己熟悉的语言中被理解、被安慰、被悉心照顾。"
+    },
+    "trust": {
+      "title": "为什么信任我们",
+      "signal1": "澳大利亚本地注册企业（拥有ABN）",
+      "signal2": "由悉尼和墨尔本的家长创建和运营",
+      "signal3": "您的数据受澳大利亚隐私法保护——我们绝不分享您的个人信息",
+      "signal4": "小桥上的每一家中心都是经过认证的正规托儿机构",
+      "signal5": "搜索和咨询完全免费——家庭永远不需要付费"
+    }
+  },
+  "privacy": {
+    "title": "隐私保护",
+    "subtitle": "我们非常重视您和家人的隐私。以下是简明说明：",
+    "dataLocation": "您的数据受澳大利亚隐私法保护",
+    "dataLocationDetail": "所有信息安全存储在亚太地区，并受澳大利亚隐私法律的全面保护。",
+    "noSharing": "我们绝不分享您的个人信息",
+    "noSharingDetail": "您的信息只会分享给您主动咨询的托儿中心。我们绝不向第三方出售或透露您的数据。",
+    "deleteAnytime": "您随时可以删除账户",
+    "deleteAnytimeDetail": "在设置页面申请删除账户，您的所有数据将在30天内被永久清除。",
+    "childrenData": "对孩子信息的特别保护",
+    "childrenDataDetail": "我们只收集孩子最基本的信息（姓名、年龄和托儿需求），仅用于为您匹配合适的托儿中心，绝不用于任何营销目的。",
+    "contactUs": "对隐私有疑问？请联系 privacy@littlebridge.com.au",
+    "fullPolicyLink": "查看完整隐私政策"
+  },
+  "emails": {
+    "subjects": {
+      "welcomeFamily": "欢迎加入小桥——让我们为您找到最合适的托儿中心",
+      "welcomeEducator": "欢迎加入小桥——您的双语职业发展从这里开始",
+      "welcomeCenter": "欢迎加入小桥——开始与双语家庭建立连接",
+      "verifyEmail": "请验证您的小桥邮箱地址",
+      "resetPassword": "重置您的小桥密码",
+      "newEnquiry": "来自{familyName}的新咨询 — {centerName}",
+      "enquiryConfirmation": "您发送至{centerName}的咨询已成功送达",
+      "newApplication": "{jobTitle}收到新的教育者申请",
+      "applicationConfirmation": "您对{jobTitle}的申请已成功发送",
+      "trialStarted": "您的14天免费试用已开始",
+      "trialEnding": "您的小桥试用期还有{days}天到期",
+      "paymentConfirmation": "付款确认——小桥订阅服务",
+      "paymentFailed": "需要处理：小桥订阅付款失败",
+      "subscriptionCancelled": "您的小桥订阅已取消",
+      "guestEnquiryConfirmation": "您发送至{centerName}的咨询已送达——注册账户随时查看进度"
+    }
+  },
+  "meta": {
+    "titles": {
+      "home": "小桥 LittleBridge — 双语托儿服务平台 | 悉尼和墨尔本",
+      "search": "查找双语托儿中心 | 小桥 LittleBridge",
+      "centerProfile": "{centerName} — 双语托儿 | 小桥 LittleBridge",
+      "jobs": "双语托儿职位 | 小桥 LittleBridge",
+      "jobDetail": "{centerName}招聘{jobTitle} | 小桥职位",
+      "signIn": "登录 | 小桥 LittleBridge",
+      "signUp": "注册账户 | 小桥 LittleBridge",
+      "familyProfile": "家庭资料 | 小桥 LittleBridge",
+      "educatorProfile": "教育工作者档案 | 小桥 LittleBridge",
+      "centerDashboard": "中心管理面板 | 小桥 LittleBridge",
+      "pricing": "定价 — 每月$99 | 小桥托儿中心版",
+      "privacy": "隐私政策 | 小桥 LittleBridge",
+      "terms": "服务条款 | 小桥 LittleBridge",
+      "about": "关于我们 | 小桥 LittleBridge",
+      "ccs": "了解儿童保育补贴 | 小桥 LittleBridge"
+    },
+    "descriptions": {
+      "home": "小桥为悉尼和墨尔本的华人家庭连接拥有中英双语员工的优质托儿中心和教育工作者。支持中英文搜索。",
+      "search": "搜索附近有中文员工的托儿中心。按语言、位置和价值观匹配筛选。免费搜索。",
+      "jobs": "找到真正重视双语技能的托儿工作。悉尼和墨尔本的普通话、粤语和英语职位。",
+      "pricing": "在小桥注册您的托儿中心，每月仅$99。触达双语家庭，免中介费招聘双语教育工作者。14天免费试用。",
+      "about": "小桥由理解华人家庭找托儿中心之难的家长创建，帮您找到让孩子有家的感觉的托儿中心。",
+      "ccs": "用中文了解澳大利亚儿童保育补贴。看看您的家庭能省多少托儿费。"
+    },
+    "ogTags": {
+      "siteName": "小桥 LittleBridge",
+      "homeTitle": "小桥——为孩子的双语未来选择最好的起点",
+      "homeDescription": "为悉尼和墨尔本的华人家庭连接优质双语托儿服务",
+      "homeImage": "/og-image-zh.png",
+      "searchTitle": "查找附近的双语托儿中心",
+      "searchDescription": "搜索有中文员工的托儿中心",
+      "jobsTitle": "双语托儿职位",
+      "jobsDescription": "找到重视双语技能的工作"
+    }
+  },
+  "admin": {
+    "title": "管理后台",
+    "metrics": {
+      "title": "平台数据",
+      "totalFamilies": "总家庭数",
+      "totalEducators": "总教育者数",
+      "totalCenters": "总中心数",
+      "totalEnquiries": "总咨询量",
+      "totalApplications": "总申请量",
+      "thisWeek": "本周+{count}",
+      "enquiryConversion": "咨询转化率",
+      "payingCenters": "付费中心",
+      "mrr": "月经常性收入"
+    },
+    "users": {
+      "title": "用户管理",
+      "families": "家庭",
+      "educators": "教育工作者",
+      "centers": "托儿中心",
+      "searchPlaceholder": "按姓名或邮箱搜索...",
+      "viewProfile": "查看资料",
+      "activate": "激活",
+      "deactivate": "停用",
+      "verifyWWCC": "验证WWCC",
+      "overrideSubscription": "覆盖订阅状态",
+      "lastActive": "最后活跃：{date}"
+    },
+    "activityLog": {
+      "title": "操作日志",
+      "recentActions": "最近50条操作",
+      "actor": "操作者",
+      "action": "操作",
+      "entity": "对象",
+      "timestamp": "时间"
+    }
+  },
+  "onboarding": {
+    "welcome": {
+      "title": "欢迎来到小桥！",
+      "subtitle": "简单设置一下，只需一分钟。",
+      "familyMessage": "我们将帮您找到附近有中文员工的托儿中心，让孩子有家的感觉。",
+      "educatorMessage": "我们将帮您找到真正重视双语技能的托儿中心。",
+      "centerMessage": "我们将帮您与双语家庭和教育工作者建立连接。"
+    },
+    "steps": {
+      "basicInfo": "基本信息",
+      "details": "详细资料",
+      "preferences": "偏好设置",
+      "complete": "完成！"
+    },
+    "complete": {
+      "title": "设置完成！",
+      "familyMessage": "开始搜索吧！我们会为您标注哪些中心有中文员工、哪些有空位。",
+      "educatorMessage": "您的档案现在对中心可见了。浏览与您技能和偏好匹配的职位。",
+      "centerMessage": "您的中心已上线。双语家庭现在可以找到您并发送咨询。",
+      "familyCta": "查找托儿中心",
+      "educatorCta": "浏览职位",
+      "centerCta": "进入管理面板"
+    }
+  },
+  "accessibility": {
+    "skipToContent": "跳至主要内容",
+    "menuOpen": "打开菜单",
+    "menuClose": "关闭菜单",
+    "languageToggle": "切换为英文",
+    "searchIcon": "搜索",
+    "closeDialog": "关闭对话框",
+    "previousPhoto": "上一张照片",
+    "nextPhoto": "下一张照片",
+    "requiredField": "必填项",
+    "optionalField": "选填项",
+    "externalLink": "在新窗口中打开"
+  },
+  "sharing": {
+    "shareTitle": "来看看小桥上的{name}",
+    "shareDescription": "我在小桥上发现了这个——一个专为华人家庭打造的双语托儿服务平台。",
+    "copySuccess": "链接已复制到剪贴板！",
+    "wechatShare": "分享到微信",
+    "wechatInstruction": "打开微信扫描二维码或粘贴链接"
+  },
+  "translationFeedback": {
+    "helpful": "这个翻译准确吗？",
+    "yes": "准确",
+    "no": "需要改进",
+    "thanks": "感谢您的反馈！"
+  }
+}
