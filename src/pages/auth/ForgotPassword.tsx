@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/i18n";
-import { supabase } from "@/lib/supabase";
+import { isDemoMode } from "@/lib/supabase";
 import { cn } from "@/lib/utils";
 import { Mail, Loader2, ArrowLeft } from "lucide-react";
 
@@ -36,16 +36,22 @@ export default function ForgotPassword() {
     setErrors({});
 
     try {
-      const { error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: window.location.origin + "/reset-password",
-      });
-
-      if (error) {
-        setErrors({ general: error.message });
-        setSubmitting(false);
-        return;
+      if (isDemoMode) {
+        // Demo mode — just show success
+        await new Promise((r) => setTimeout(r, 600));
+      } else {
+        const res = await fetch("/api/auth/forgot-password", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email }),
+        });
+        if (!res.ok) {
+          const data = await res.json();
+          setErrors({ general: data.error || "Request failed" });
+          setSubmitting(false);
+          return;
+        }
       }
-
       setSubmitted(true);
     } catch {
       setErrors({ general: "An unexpected error occurred. Please try again." });

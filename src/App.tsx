@@ -3,34 +3,43 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 
-// Pages — existing full implementations
+// Public pages
+import Landing from "@/pages/Landing";
+import About from "@/pages/About";
+import CCSGuide from "@/pages/CCSGuide";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
 
-// Pages — placeholders (will be replaced as each page is built)
-import {
-  Landing,
-  CenterSearch,
-  CenterDetail,
-  GuestEnquiry,
-  JobSearch,
-  EducatorSignUp,
-  SignIn,
-  SignUp,
-  VerifyEmail,
-  ForgotPassword,
-  ResetPassword,
-  About,
-  CCSGuide,
-  NotFound,
-  FamilyProfile,
-  FamilyEnquiries,
-  CenterOnboard,
-  CenterProfile,
-  CenterDashboard,
-  CenterJobPost,
-  AdminDashboard,
-} from "@/pages/Placeholders";
+// Search (public, no auth required)
+import CenterSearch from "@/pages/search/CenterSearch";
+import CenterDetail from "@/pages/search/CenterDetail";
+import GuestEnquiry from "@/pages/search/GuestEnquiry";
+
+// Auth pages
+import SignIn from "@/pages/auth/SignIn";
+import SignUp from "@/pages/auth/SignUp";
+import VerifyEmail from "@/pages/auth/VerifyEmail";
+import ForgotPassword from "@/pages/auth/ForgotPassword";
+import ResetPassword from "@/pages/auth/ResetPassword";
+
+// Educators (public)
+import EducatorSignUp from "@/pages/educators/EducatorSignUp";
+
+// Center (mix of public + protected)
+import CenterOnboard from "@/pages/center/CenterOnboard";
+import CenterProfile from "@/pages/center/CenterProfile";
+import CenterDashboard from "@/pages/center/CenterDashboard";
+import CenterJobPost from "@/pages/center/CenterJobPost";
+
+// Family (protected)
+import FamilyProfile from "@/pages/family/FamilyProfile";
+import FamilyEnquiries from "@/pages/family/FamilyEnquiries";
+
+// Admin (protected)
+import AdminDashboard from "@/pages/admin/AdminDashboard";
+
+// Placeholder for routes not yet built
+import { JobSearch, NotFound } from "@/pages/Placeholders";
 
 // ---------------------------------------------------------------------------
 // Layout wrapper — Header on top, Footer on bottom, content fills the middle

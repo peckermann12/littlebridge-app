@@ -2,7 +2,8 @@ import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "@/i18n";
 import { useAuth } from "@/contexts/AuthContext";
-import { supabase } from "@/lib/supabase";
+import { supabase, isDemoMode } from "@/lib/supabase";
+import { mockFamilyProfile, mockChildren } from "@/lib/mock-data";
 import { cn } from "@/lib/utils";
 import {
   User,
@@ -135,6 +136,35 @@ export default function FamilyProfile() {
     if (!user) return;
 
     async function loadProfile() {
+      // Demo mode: use mock family profile
+      if (isDemoMode) {
+        const fp = mockFamilyProfile;
+        setFamilyProfileId(fp.id);
+        setForm({
+          parentName: fp.parent_name,
+          suburb: fp.suburb,
+          phone: fp.phone,
+          communicationLanguage: fp.communication_language,
+          chineseName: fp.chinese_name || "",
+          wechatId: fp.wechat_id || "",
+          priorities: fp.priorities,
+          additionalNotes: fp.additional_notes || "",
+        });
+        setChildren(
+          mockChildren.map((c) => ({
+            id: c.id,
+            name: c.name,
+            dateOfBirth: c.date_of_birth,
+            daysPerWeek: c.days_per_week,
+          })),
+        );
+        if (fp.chinese_name || fp.wechat_id || fp.priorities.length > 0 || fp.additional_notes) {
+          setShowOptional(true);
+        }
+        setLoading(false);
+        return;
+      }
+
       try {
         const { data: fp, error: fpError } = await supabase
           .from("family_profiles")
@@ -265,6 +295,16 @@ export default function FamilyProfile() {
 
     setSaving(true);
     setToast(null);
+
+    // Demo mode: simulate save
+    if (isDemoMode) {
+      setTimeout(() => {
+        setToast({ type: "success", message: t("familyProfile.saveSuccess" as any) });
+        setSaving(false);
+        setTimeout(() => setToast(null), 3000);
+      }, 600);
+      return;
+    }
 
     try {
       // Upsert family_profiles

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "@/i18n";
 import { useAuth } from "@/contexts/AuthContext";
-import { supabase } from "@/lib/supabase";
+import { supabase, isDemoMode } from "@/lib/supabase";
 import { cn } from "@/lib/utils";
 import {
   Briefcase,
@@ -88,6 +88,11 @@ export default function CenterJobPost() {
     if (!user) return;
 
     async function load() {
+      if (isDemoMode) {
+        setCenterProfileId("demo-center-001");
+        setLoading(false);
+        return;
+      }
       try {
         const { data, error } = await supabase
           .from("center_profiles")
@@ -147,26 +152,30 @@ export default function CenterJobPost() {
     setToast(null);
 
     try {
-      const languagesJson = form.languagesRequired.map((lang) => ({
-        language: lang,
-        proficiency: "conversational",
-      }));
+      if (isDemoMode) {
+        await new Promise((r) => setTimeout(r, 800));
+      } else {
+        const languagesJson = form.languagesRequired.map((lang) => ({
+          language: lang,
+          proficiency: "conversational",
+        }));
 
-      const { error } = await supabase.from("job_listings").insert({
-        center_profile_id: centerProfileId,
-        title: form.title.trim(),
-        employment_type: form.employmentType,
-        description_en: form.descriptionEn.trim() || null,
-        description_zh: form.descriptionZh.trim() || null,
-        qualification_required: form.qualificationRequired || null,
-        languages_required: languagesJson,
-        pay_min: form.payMin ? parseFloat(form.payMin) : null,
-        pay_max: form.payMax ? parseFloat(form.payMax) : null,
-        start_date: form.startDate || null,
-        status: "active",
-      });
+        const { error } = await supabase.from("job_listings").insert({
+          center_profile_id: centerProfileId,
+          title: form.title.trim(),
+          employment_type: form.employmentType,
+          description_en: form.descriptionEn.trim() || null,
+          description_zh: form.descriptionZh.trim() || null,
+          qualification_required: form.qualificationRequired || null,
+          languages_required: languagesJson,
+          pay_min: form.payMin ? parseFloat(form.payMin) : null,
+          pay_max: form.payMax ? parseFloat(form.payMax) : null,
+          start_date: form.startDate || null,
+          status: "active",
+        });
 
-      if (error) throw error;
+        if (error) throw error;
+      }
 
       setToast({ type: "success", message: t("jobs.postJob.success" as any) });
 

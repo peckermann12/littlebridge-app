@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "@/i18n";
-import { supabase } from "@/lib/supabase";
+import { isDemoMode } from "@/lib/supabase";
 import { cn } from "@/lib/utils";
 import { Loader2, CheckCircle } from "lucide-react";
 
@@ -48,19 +48,24 @@ export default function ResetPassword() {
     setErrors({});
 
     try {
-      const { error } = await supabase.auth.updateUser({
-        password: newPassword,
-      });
-
-      if (error) {
-        setErrors({ general: error.message });
-        setSubmitting(false);
-        return;
+      if (isDemoMode) {
+        await new Promise((r) => setTimeout(r, 600));
+      } else {
+        const res = await fetch("/api/auth/reset-password", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+          body: JSON.stringify({ password: newPassword }),
+        });
+        if (!res.ok) {
+          const data = await res.json();
+          setErrors({ general: data.error || "Reset failed" });
+          setSubmitting(false);
+          return;
+        }
       }
 
       setSuccess(true);
-
-      // Redirect to sign in after 2 seconds
       setTimeout(() => {
         navigate("/signin", { replace: true });
       }, 2000);

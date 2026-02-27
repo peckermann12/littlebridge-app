@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "@/i18n";
-import { supabase } from "@/lib/supabase";
+import { isDemoMode } from "@/lib/supabase";
 import { cn } from "@/lib/utils";
 import { Mail, Loader2 } from "lucide-react";
 
@@ -34,15 +34,17 @@ export default function VerifyEmail() {
     setResent(false);
 
     try {
-      const { error } = await supabase.auth.resend({
-        type: "signup",
-        email,
-      });
-
-      if (!error) {
-        setResent(true);
-        setCooldown(COOLDOWN_SECONDS);
+      if (isDemoMode) {
+        await new Promise((r) => setTimeout(r, 500));
+      } else {
+        await fetch("/api/auth/resend-verification", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email }),
+        });
       }
+      setResent(true);
+      setCooldown(COOLDOWN_SECONDS);
     } catch {
       // Silently fail -- the user can try again
     } finally {

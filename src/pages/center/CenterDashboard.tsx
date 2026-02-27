@@ -2,7 +2,8 @@ import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/i18n";
 import { useAuth } from "@/contexts/AuthContext";
-import { supabase } from "@/lib/supabase";
+import { supabase, isDemoMode } from "@/lib/supabase";
+import { mockCenterProfileRow, mockEnquiries } from "@/lib/mock-data";
 import { cn } from "@/lib/utils";
 import {
   Inbox,
@@ -148,6 +149,18 @@ export default function CenterDashboard() {
     if (!user) return;
 
     async function load() {
+      // Demo mode: use mock data
+      if (isDemoMode) {
+        setCenter(mockCenterProfileRow as CenterProfileRow);
+        // Filter mock enquiries for this center
+        const centerEnqs = mockEnquiries.filter(
+          (eq) => eq.center_profile_id === mockCenterProfileRow.id,
+        );
+        setEnquiries(centerEnqs as unknown as EnquiryRow[]);
+        setLoading(false);
+        return;
+      }
+
       try {
         // Fetch center profile
         const { data: cp, error: cpError } = await supabase
@@ -213,6 +226,16 @@ export default function CenterDashboard() {
   // ---- Status update ----
   const updateStatus = useCallback(
     async (enquiryId: string, newStatus: string) => {
+      // Demo mode: update locally only
+      if (isDemoMode) {
+        setEnquiries((prev) =>
+          prev.map((eq) => (eq.id === enquiryId ? { ...eq, status: newStatus } : eq)),
+        );
+        setToast({ type: "success", message: "Status updated" });
+        setTimeout(() => setToast(null), 2000);
+        return;
+      }
+
       try {
         const { error } = await supabase
           .from("enquiries")
@@ -237,6 +260,16 @@ export default function CenterDashboard() {
   // ---- Notes save ----
   const saveNotes = useCallback(async (enquiryId: string, notes: string) => {
     setSavingNotes((prev) => ({ ...prev, [enquiryId]: true }));
+
+    // Demo mode: just update local state
+    if (isDemoMode) {
+      setEnquiries((prev) =>
+        prev.map((eq) => (eq.id === enquiryId ? { ...eq, center_notes: notes } : eq)),
+      );
+      setSavingNotes((prev) => ({ ...prev, [enquiryId]: false }));
+      return;
+    }
+
     try {
       const { error } = await supabase
         .from("enquiries")

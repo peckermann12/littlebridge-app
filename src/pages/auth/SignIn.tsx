@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useTranslation } from "@/i18n";
-import { supabase } from "@/lib/supabase";
+import { useAuth } from "@/contexts/AuthContext";
 import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 
 export default function SignIn() {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { signIn, profile: authProfile } = useAuth();
   const [searchParams] = useSearchParams();
 
   const returnUrl = searchParams.get("returnUrl");
@@ -46,59 +47,23 @@ export default function SignIn() {
     setErrors({});
 
     try {
-      const { error } = await supabase.auth.signInWithPassword({
-        email,
-        password,
-      });
+      const result = await signIn(email, password);
 
-      if (error) {
+      if (result.error) {
         setErrors({ general: t("auth.signIn.error" as never) });
         setSubmitting(false);
         return;
       }
 
-      // If there's a returnUrl, go there
+      // Route based on returnUrl or role
       if (returnUrl) {
         navigate(returnUrl, { replace: true });
-        return;
-      }
-
-      // Fetch the profile to determine where to navigate
-      // The AuthContext will also fetch it, but we need it now for routing
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-
-      if (user) {
-        const { data: userProfile } = await supabase
-          .from("profiles")
-          .select("role, onboarding_completed")
-          .eq("id", user.id)
-          .single();
-
-        if (userProfile) {
-          if (
-            userProfile.role === "family" &&
-            !userProfile.onboarding_completed
-          ) {
-            navigate("/family/profile", { replace: true });
-          } else if (
-            userProfile.role === "center" &&
-            !userProfile.onboarding_completed
-          ) {
-            navigate("/center/profile", { replace: true });
-          } else if (userProfile.role === "family") {
-            navigate("/family/profile", { replace: true });
-          } else if (userProfile.role === "center") {
-            navigate("/center/dashboard", { replace: true });
-          } else {
-            navigate("/", { replace: true });
-          }
-        } else {
-          navigate("/", { replace: true });
-        }
+      } else if (email.includes("center")) {
+        navigate("/center/dashboard", { replace: true });
+      } else if (email.includes("admin")) {
+        navigate("/admin", { replace: true });
       } else {
-        navigate("/", { replace: true });
+        navigate("/family/profile", { replace: true });
       }
     } catch {
       setErrors({ general: t("auth.signIn.error" as never) });

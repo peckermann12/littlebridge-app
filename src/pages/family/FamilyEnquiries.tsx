@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/i18n";
 import { useAuth } from "@/contexts/AuthContext";
-import { supabase } from "@/lib/supabase";
+import { supabase, isDemoMode } from "@/lib/supabase";
+import { mockEnquiries } from "@/lib/mock-data";
 import { cn } from "@/lib/utils";
 import {
   Search,
@@ -100,6 +101,25 @@ export default function FamilyEnquiries() {
     if (!user) return;
 
     async function loadEnquiries() {
+      // Demo mode: use mock enquiries (show all as if from family perspective)
+      if (isDemoMode) {
+        const familyEnqs = mockEnquiries.map((eq) => ({
+          id: eq.id,
+          center_profile_id: eq.center_profile_id,
+          message_original: eq.message_original,
+          status: eq.status,
+          created_at: eq.created_at,
+          center_profiles: eq.center_profiles || {
+            center_name: "Unknown Center",
+            slug: null,
+            suburb: null,
+          },
+        }));
+        setEnquiries(familyEnqs as unknown as Enquiry[]);
+        setLoading(false);
+        return;
+      }
+
       try {
         // First get the family_profile_id for this user
         const { data: familyProfile, error: fpError } = await supabase

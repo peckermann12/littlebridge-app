@@ -3,17 +3,17 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { AuthProvider } from "./contexts/AuthContext";
-import { LanguageProvider } from "./i18n";
+import { I18nProvider } from "./i18n";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <LanguageProvider>
+      <I18nProvider>
         <AuthProvider>
           <App />
         </AuthProvider>
-      </LanguageProvider>
+      </I18nProvider>
     </BrowserRouter>
   </React.StrictMode>,
 );

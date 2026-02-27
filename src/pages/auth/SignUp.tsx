@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useTranslation } from "@/i18n";
-import { supabase } from "@/lib/supabase";
+import { useAuth } from "@/contexts/AuthContext";
 import { cn } from "@/lib/utils";
 import { Users, Building2, ArrowLeft, Loader2 } from "lucide-react";
 
@@ -10,6 +10,7 @@ type Role = "family" | "center";
 export default function SignUp() {
   const { t, locale } = useTranslation();
   const navigate = useNavigate();
+  const { signUp: authSignUp } = useAuth();
   const [searchParams] = useSearchParams();
 
   const preselectedRole = searchParams.get("role") as Role | null;
@@ -72,37 +73,20 @@ export default function SignUp() {
     setErrors({});
 
     try {
-      const { data, error } = await supabase.auth.signUp({
-        email,
-        password,
-        options: {
-          data: { role: selectedRole },
-        },
-      });
+      const result = await authSignUp(email, password, selectedRole);
 
-      if (error) {
-        setErrors({ general: error.message });
+      if (result.error) {
+        setErrors({ general: result.error });
         setSubmitting(false);
         return;
       }
 
-      // Insert into profiles table
-      if (data.user) {
-        const { error: profileError } = await supabase.from("profiles").insert({
-          id: data.user.id,
-          role: selectedRole,
-          email,
-          preferred_language: locale,
-        });
-
-        if (profileError) {
-          // Profile might already exist via a database trigger -- not fatal
-          console.warn("Profile insert warning:", profileError.message);
-        }
+      // Navigate based on role
+      if (selectedRole === "center") {
+        navigate("/center/profile", { replace: true });
+      } else {
+        navigate("/family/profile", { replace: true });
       }
-
-      // Navigate to verify-email page
-      navigate("/verify-email", { state: { email } });
     } catch {
       setErrors({ general: "An unexpected error occurred. Please try again." });
     } finally {

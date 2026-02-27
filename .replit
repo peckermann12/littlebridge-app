@@ -1,0 +1,16 @@
+run = "npm run db:setup && npm run db:seed && npm start"
+entrypoint = "server/index.ts"
+
+[nix]
+channel = "stable-24_05"
+
+[env]
+PATH = "/home/runner/$REPL_SLUG/node_modules/.bin:$PATH"
+
+[[ports]]
+localPort = 3001
+externalPort = 80
+
+[deployment]
+run = ["sh", "-c", "npm run db:setup && npm run start"]
+build = ["sh", "-c", "npm install && npm run build"]

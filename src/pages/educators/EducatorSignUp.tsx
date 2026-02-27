@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/i18n";
-import { supabase } from "@/lib/supabase";
+import { supabase, isDemoMode } from "@/lib/supabase";
 import { cn } from "@/lib/utils";
 import {
   CheckCircle,
@@ -122,6 +122,15 @@ export default function EducatorSignUp() {
 
     setSubmitting(true);
     setSubmitError(null);
+
+    // Demo mode: simulate successful submission
+    if (isDemoMode) {
+      setTimeout(() => {
+        setSubmitted(true);
+        setSubmitting(false);
+      }, 800);
+      return;
+    }
 
     try {
       const { error } = await supabase.from("educator_leads").insert({

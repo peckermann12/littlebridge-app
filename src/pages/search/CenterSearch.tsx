@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { useTranslation } from "@/i18n";
-import { supabase } from "@/lib/supabase";
+import { supabase, isDemoMode } from "@/lib/supabase";
+import { mockCenters } from "@/lib/mock-data";
 import { cn } from "@/lib/utils";
 import {
   Search,
@@ -59,7 +60,7 @@ type AgeGroupFilter = "0-2" | "2-3" | "3-5";
 interface CenterCardProps {
   center: CenterProfile;
   locale: string;
-  t: (key: string, vars?: Record<string, string | number>) => string;
+  t: (key: any, vars?: Record<string, string | number>) => string;
 }
 
 function CenterCard({ center, locale, t }: CenterCardProps) {
@@ -207,7 +208,7 @@ interface FilterPanelProps {
   onApply: () => void;
   onClear: () => void;
   onClose: () => void;
-  t: (key: string, vars?: Record<string, string | number>) => string;
+  t: (key: any, vars?: Record<string, string | number>) => string;
 }
 
 function FilterPanel({
@@ -348,7 +349,7 @@ function FilterPanel({
 
 interface WaitlistSignupProps {
   suburb: string;
-  t: (key: string, vars?: Record<string, string | number>) => string;
+  t: (key: any, vars?: Record<string, string | number>) => string;
   locale: string;
 }
 
@@ -364,6 +365,15 @@ function WaitlistSignup({ suburb, t, locale }: WaitlistSignupProps) {
 
     setSubmitting(true);
     setError("");
+
+    // Demo mode: simulate success
+    if (isDemoMode) {
+      setTimeout(() => {
+        setSubmitted(true);
+        setSubmitting(false);
+      }, 600);
+      return;
+    }
 
     try {
       const { error: insertError } = await supabase
@@ -482,6 +492,13 @@ export default function CenterSearch() {
     async function fetchCenters() {
       setLoading(true);
       setError(null);
+
+      // Demo mode: use mock data instead of Supabase
+      if (isDemoMode) {
+        setCenters(mockCenters as unknown as CenterProfile[]);
+        setLoading(false);
+        return;
+      }
 
       try {
         const { data, error: fetchError } = await supabase

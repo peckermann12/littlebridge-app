@@ -2,7 +2,8 @@ import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "@/i18n";
 import { useAuth } from "@/contexts/AuthContext";
-import { supabase } from "@/lib/supabase";
+import { supabase, isDemoMode } from "@/lib/supabase";
+import { mockCenters } from "@/lib/mock-data";
 import { cn } from "@/lib/utils";
 import {
   Building2,
@@ -128,6 +129,35 @@ export default function CenterProfile() {
     if (!user) return;
 
     async function load() {
+      // Demo mode: use first mock center as the center profile
+      if (isDemoMode) {
+        const cp = mockCenters[0];
+        setCenterProfileId(cp.id);
+
+        const langs = cp.staff_languages.map((sl) => sl.language);
+
+        setForm({
+          centerName: cp.center_name,
+          address: cp.address,
+          suburb: cp.suburb,
+          postcode: cp.postcode,
+          phone: cp.phone,
+          email: cp.email,
+          website: cp.website,
+          descriptionEn: cp.description_en,
+          descriptionZh: cp.description_zh,
+          staffLanguages: langs,
+          programs: cp.programs,
+          ageGroups: cp.age_groups.map((ag) => ag.group_name),
+          feeMin: String(cp.fee_min),
+          feeMax: String(cp.fee_max),
+          isCcsApproved: cp.is_ccs_approved,
+          nqsRating: cp.nqs_rating,
+        });
+        setLoading(false);
+        return;
+      }
+
       try {
         const { data: cp, error } = await supabase
           .from("center_profiles")
@@ -227,6 +257,16 @@ export default function CenterProfile() {
 
     setSaving(true);
     setToast(null);
+
+    // Demo mode: simulate save
+    if (isDemoMode) {
+      setTimeout(() => {
+        setToast({ type: "success", message: t("centerProfile.saveSuccess" as any) });
+        setSaving(false);
+        setTimeout(() => setToast(null), 3000);
+      }, 600);
+      return;
+    }
 
     try {
       const staffLanguagesJson = form.staffLanguages.map((lang) => ({

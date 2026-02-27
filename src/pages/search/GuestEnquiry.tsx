@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "@/i18n";
-import { supabase } from "@/lib/supabase";
+import { supabase, isDemoMode } from "@/lib/supabase";
+import { mockCenters } from "@/lib/mock-data";
 import { cn } from "@/lib/utils";
 import {
   ArrowLeft,
@@ -194,6 +195,26 @@ export default function GuestEnquiry() {
 
     async function fetchCenter() {
       setLoadingCenter(true);
+
+      // Demo mode: find center from mock data
+      if (isDemoMode) {
+        const found = mockCenters.find((c) => c.slug === slug);
+        if (found) {
+          setCenter({
+            id: found.id,
+            center_name: found.center_name,
+            slug: found.slug,
+            suburb: found.suburb,
+            state: found.state,
+            center_photos: found.center_photos.map((p) => ({ photo_url: p.photo_url })),
+          } as CenterSummary);
+        } else {
+          navigate("/search");
+        }
+        setLoadingCenter(false);
+        return;
+      }
+
       try {
         const { data, error } = await supabase
           .from("center_profiles")
@@ -347,6 +368,16 @@ export default function GuestEnquiry() {
 
     setSubmitting(true);
     setSubmitError("");
+
+    // Demo mode: simulate successful submission
+    if (isDemoMode) {
+      setTimeout(() => {
+        clearDraft();
+        setSubmitted(true);
+        setSubmitting(false);
+      }, 800);
+      return;
+    }
 
     try {
       // Determine source language

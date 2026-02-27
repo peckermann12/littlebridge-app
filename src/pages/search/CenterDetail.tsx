@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "@/i18n";
-import { supabase } from "@/lib/supabase";
+import { supabase, isDemoMode } from "@/lib/supabase";
+import { mockCenters } from "@/lib/mock-data";
 import { cn } from "@/lib/utils";
 import {
   ArrowLeft,
@@ -169,6 +170,18 @@ export default function CenterDetail() {
     async function fetchCenter() {
       setLoading(true);
       setNotFound(false);
+
+      // Demo mode: find center from mock data by slug
+      if (isDemoMode) {
+        const found = mockCenters.find((c) => c.slug === slug);
+        if (found) {
+          setCenter(found as unknown as CenterData);
+        } else {
+          setNotFound(true);
+        }
+        setLoading(false);
+        return;
+      }
 
       try {
         const { data, error } = await supabase
