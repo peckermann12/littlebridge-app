@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"tsx watch server/index.ts\" \"vite\"",
     "build": "vite build",
-    "start": "NODE_ENV=production tsx server/index.ts",
+    "start": "tsx server/db/setup.ts && NODE_ENV=production tsx server/index.ts",
     "db:setup": "tsx server/db/setup.ts",
     "db:seed": "tsx server/db/seed.ts"
   },
